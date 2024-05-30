@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-
 public class PlayerController : MonoBehaviour
 {
 
@@ -39,6 +38,9 @@ public class PlayerController : MonoBehaviour
     //Detection
     private Vector3 respawnPoint;
     public GameObject fallDetector;
+
+    //Health
+    private bool isHurt = false;
 
 
     // Start is called before the first frame update
@@ -126,9 +128,27 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Detection"){
-            transform.position = respawnPoint;
+        if(other.tag == "Detection" && !isHurt){
+           HealthManager.health--;
+             transform.position = respawnPoint;
+           if(HealthManager.health <= 0){
+             PlayerManager.isGameOver = true;
+             gameObject.SetActive(false);
+           }else{
+            StartCoroutine(GetHurt());
+           }
+        }else if(other.tag == "Checkpoint"){
+            respawnPoint = transform.position;
         }
+    }
+
+    IEnumerator GetHurt(){
+        isHurt = true;
+        Physics2D.IgnoreLayerCollision(7,8);
+        yield return new WaitForSeconds(1);
+
+        Physics2D.IgnoreLayerCollision(7,8,false);
+        isHurt =false;
     }
 
 

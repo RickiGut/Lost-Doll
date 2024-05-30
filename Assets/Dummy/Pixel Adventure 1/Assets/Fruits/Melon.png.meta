@@ -1,7 +1,58 @@
 fileFormatVersion: 2
-guid: cc61aaf7044297a4f98f80a9c000b7a4
+guid: 031678d507e557a41b7a16fc33bf6c39
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3776312371561069292
+    second: Melon_0
+  - first:
+      213: 2611220147007439301
+    second: Melon_1
+  - first:
+      213: 2353208620542727372
+    second: Melon_2
+  - first:
+      213: 8821371696964291164
+    second: Melon_3
+  - first:
+      213: 8382193064667267037
+    second: Melon_4
+  - first:
+      213: -3288833518496767930
+    second: Melon_5
+  - first:
+      213: 4593711905992766363
+    second: Melon_6
+  - first:
+      213: -2703723749527953725
+    second: Melon_7
+  - first:
+      213: 4404175151357073704
+    second: Melon_8
+  - first:
+      213: -4406734128596351014
+    second: Melon_9
+  - first:
+      213: -8731991674958125425
+    second: Melon_10
+  - first:
+      213: -7029448349843301362
+    second: Melon_11
+  - first:
+      213: -909351362157965132
+    second: Melon_12
+  - first:
+      213: 2938550379556323724
+    second: Melon_13
+  - first:
+      213: -1316238954007984859
+    second: Melon_14
+  - first:
+      213: 2641464298146962395
+    second: Melon_15
+  - first:
+      213: 4074361457694701065
+    second: Melon_16
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -48,7 +99,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 540
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,9 +114,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -85,7 +136,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,328 +148,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: compile_sprite_naya_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1620
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fca0ed2f353d30941a15fd91fddb8c79
-      internalID: 1452783266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_1
-      rect:
-        serializedVersion: 2
-        x: 540
-        y: 1620
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33803ea85e2f85140a0dba7d1fd79a13
-      internalID: -1535340781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_2
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 1620
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cdcb48e81e0eb0b4a9e8b5d466453395
-      internalID: -1957203407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_3
-      rect:
-        serializedVersion: 2
-        x: 1620
-        y: 1620
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3712d8f569460ae4aa3b859d2a08647f
-      internalID: -998298727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1080
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0b9432f6b78e8549842006f1e1b166b
-      internalID: 815126990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_5
-      rect:
-        serializedVersion: 2
-        x: 540
-        y: 1080
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5dff4b6ed2c2b647b3f62c6af833d80
-      internalID: 121644872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_6
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 1080
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fd7e6f38659c9f4f9e1d936c60dfa14
-      internalID: 2052782795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_7
-      rect:
-        serializedVersion: 2
-        x: 1620
-        y: 1080
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e6e3044a72448c4bb67b6a4369bf54d
-      internalID: 928988702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_8
-      rect:
-        serializedVersion: 2
-        x: 2160
-        y: 1080
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 888f379ff7bd1bb47bb45ed9a5eae1c6
-      internalID: -2089778250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_9
-      rect:
-        serializedVersion: 2
-        x: 2700
-        y: 1080
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 730fd0b2bea7de34785c2106af8a8dbb
-      internalID: 297562113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 540
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fc663acb694c694eb241e59675bbeaf
-      internalID: 982787235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_11
-      rect:
-        serializedVersion: 2
-        x: 540
-        y: 540
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dae618e9093c8f5479b8a9bdb7f917a2
-      internalID: 650987153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_12
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 540
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93bfbe69002172e4bab74027dd4310bf
-      internalID: 2056210783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_13
-      rect:
-        serializedVersion: 2
-        x: 1620
-        y: 540
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af10639b85ad94a43bdc80fa476ec5a3
-      internalID: 82054377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_14
-      rect:
-        serializedVersion: 2
-        x: 2160
-        y: 540
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60097d82ae8ab414481fa9ba13c13115
-      internalID: -5629791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_15
+      name: Melon_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 460
-        height: 540
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b81658b276089f845919a226f9fd703d
-      internalID: 1125780902
+      spriteID: 4e49f999ea0bf3243864ff5b92b20f7c
+      internalID: 3776312371561069292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: compile_sprite_naya_16
+      name: Melon_1
       rect:
         serializedVersion: 2
-        x: 540
+        x: 32
         y: 0
-        width: 460
-        height: 540
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -447,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8c5f6655e705824c9bc43f101d6c205
-      internalID: 2042688848
+      spriteID: cbca6add0b0af0d4fa098523afe80aa7
+      internalID: 2611220147007439301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: compile_sprite_naya_17
+      name: Melon_2
       rect:
         serializedVersion: 2
-        x: 1080
+        x: 64
         y: 0
-        width: 460
-        height: 540
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b10fd62fba10e3e42a707f3a4477b646
-      internalID: 318037962
+      spriteID: 340f3ad2557eb91498e7f662d9e23241
+      internalID: 2353208620542727372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: compile_sprite_naya_18
+      name: Melon_3
       rect:
         serializedVersion: 2
-        x: 1620
+        x: 96
         y: 0
-        width: 460
-        height: 540
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -489,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efc9a037be6e23140a9bf3150cd6c13f
-      internalID: -1597459531
+      spriteID: 72e3645b217b9f44080b83755cbd5b3a
+      internalID: 8821371696964291164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: compile_sprite_naya_19
+      name: Melon_4
       rect:
         serializedVersion: 2
-        x: 2160
+        x: 128
         y: 0
-        width: 460
-        height: 540
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -510,8 +246,260 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2d96a6f8405ea54b82721f974c3e898
-      internalID: -848283721
+      spriteID: 1aa467f5196b19443855ea3a96e5714d
+      internalID: 8382193064667267037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melon_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb09d128fddf0d4429ea274582abc154
+      internalID: -3288833518496767930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melon_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fc725327dd9514a81dc53c08984d63
+      internalID: 4593711905992766363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melon_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209ee70953d3275448d68a5f9e4120dd
+      internalID: -2703723749527953725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melon_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07c9ac536c377c4a91dad71b3f60e05
+      internalID: 4404175151357073704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melon_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c29928d2346ee41a4ec66c6e712a8c
+      internalID: -4406734128596351014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melon_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25ec4f67ba9a5b459ad1786adf8347c
+      internalID: -8731991674958125425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melon_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa0664b832a9fc4eaaaac8dfdb539ee
+      internalID: -7029448349843301362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melon_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a990a06277e8b574f9f05a744dfb9de3
+      internalID: -909351362157965132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melon_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41860e8d6bdf6fb4e80ae5534d2f4e81
+      internalID: 2938550379556323724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melon_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed08bd21a9ed6b4f9362e96422fcf90
+      internalID: -1316238954007984859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melon_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d1d9f238832964e949a70245d6d927
+      internalID: 2641464298146962395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Melon_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8d13ef6eb99424ca17aeda465ea8c8
+      internalID: 4074361457694701065
       vertices: []
       indices: 
       edges: []
@@ -527,26 +515,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      compile_sprite_naya_0: 1452783266
-      compile_sprite_naya_1: -1535340781
-      compile_sprite_naya_10: 982787235
-      compile_sprite_naya_11: 650987153
-      compile_sprite_naya_12: 2056210783
-      compile_sprite_naya_13: 82054377
-      compile_sprite_naya_14: -5629791
-      compile_sprite_naya_15: 1125780902
-      compile_sprite_naya_16: 2042688848
-      compile_sprite_naya_17: 318037962
-      compile_sprite_naya_18: -1597459531
-      compile_sprite_naya_19: -848283721
-      compile_sprite_naya_2: -1957203407
-      compile_sprite_naya_3: -998298727
-      compile_sprite_naya_4: 815126990
-      compile_sprite_naya_5: 121644872
-      compile_sprite_naya_6: 2052782795
-      compile_sprite_naya_7: 928988702
-      compile_sprite_naya_8: -2089778250
-      compile_sprite_naya_9: 297562113
+      Melon_0: 3776312371561069292
+      Melon_1: 2611220147007439301
+      Melon_10: -8731991674958125425
+      Melon_11: -7029448349843301362
+      Melon_12: -909351362157965132
+      Melon_13: 2938550379556323724
+      Melon_14: -1316238954007984859
+      Melon_15: 2641464298146962395
+      Melon_16: 4074361457694701065
+      Melon_2: 2353208620542727372
+      Melon_3: 8821371696964291164
+      Melon_4: 8382193064667267037
+      Melon_5: -3288833518496767930
+      Melon_6: 4593711905992766363
+      Melon_7: -2703723749527953725
+      Melon_8: 4404175151357073704
+      Melon_9: -4406734128596351014
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

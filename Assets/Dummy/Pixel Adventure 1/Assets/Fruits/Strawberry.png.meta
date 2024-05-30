@@ -1,7 +1,58 @@
 fileFormatVersion: 2
-guid: cc61aaf7044297a4f98f80a9c000b7a4
+guid: a2c110585eb710b408972fbc3b96136d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1775669009216684005
+    second: Strawberry_0
+  - first:
+      213: -32040429760078815
+    second: Strawberry_1
+  - first:
+      213: -7106730570939000684
+    second: Strawberry_2
+  - first:
+      213: 4518513080991243510
+    second: Strawberry_3
+  - first:
+      213: 901954246582174200
+    second: Strawberry_4
+  - first:
+      213: 825325050284003712
+    second: Strawberry_5
+  - first:
+      213: -5158240598457465908
+    second: Strawberry_6
+  - first:
+      213: 2009151386410624793
+    second: Strawberry_7
+  - first:
+      213: -8828998067812341462
+    second: Strawberry_8
+  - first:
+      213: 7853139244501102106
+    second: Strawberry_9
+  - first:
+      213: 7386868840556686860
+    second: Strawberry_10
+  - first:
+      213: 9150055279739663228
+    second: Strawberry_11
+  - first:
+      213: 8026213463552293463
+    second: Strawberry_12
+  - first:
+      213: 6850229642150134582
+    second: Strawberry_13
+  - first:
+      213: -7542899124980697566
+    second: Strawberry_14
+  - first:
+      213: -8532893379546982827
+    second: Strawberry_15
+  - first:
+      213: 1433410794814771726
+    second: Strawberry_16
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -48,7 +99,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 540
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,9 +114,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -85,7 +136,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,328 +148,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: compile_sprite_naya_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1620
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fca0ed2f353d30941a15fd91fddb8c79
-      internalID: 1452783266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_1
-      rect:
-        serializedVersion: 2
-        x: 540
-        y: 1620
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33803ea85e2f85140a0dba7d1fd79a13
-      internalID: -1535340781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_2
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 1620
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cdcb48e81e0eb0b4a9e8b5d466453395
-      internalID: -1957203407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_3
-      rect:
-        serializedVersion: 2
-        x: 1620
-        y: 1620
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3712d8f569460ae4aa3b859d2a08647f
-      internalID: -998298727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1080
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0b9432f6b78e8549842006f1e1b166b
-      internalID: 815126990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_5
-      rect:
-        serializedVersion: 2
-        x: 540
-        y: 1080
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5dff4b6ed2c2b647b3f62c6af833d80
-      internalID: 121644872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_6
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 1080
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fd7e6f38659c9f4f9e1d936c60dfa14
-      internalID: 2052782795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_7
-      rect:
-        serializedVersion: 2
-        x: 1620
-        y: 1080
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e6e3044a72448c4bb67b6a4369bf54d
-      internalID: 928988702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_8
-      rect:
-        serializedVersion: 2
-        x: 2160
-        y: 1080
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 888f379ff7bd1bb47bb45ed9a5eae1c6
-      internalID: -2089778250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_9
-      rect:
-        serializedVersion: 2
-        x: 2700
-        y: 1080
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 730fd0b2bea7de34785c2106af8a8dbb
-      internalID: 297562113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 540
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fc663acb694c694eb241e59675bbeaf
-      internalID: 982787235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_11
-      rect:
-        serializedVersion: 2
-        x: 540
-        y: 540
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dae618e9093c8f5479b8a9bdb7f917a2
-      internalID: 650987153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_12
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 540
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93bfbe69002172e4bab74027dd4310bf
-      internalID: 2056210783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_13
-      rect:
-        serializedVersion: 2
-        x: 1620
-        y: 540
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af10639b85ad94a43bdc80fa476ec5a3
-      internalID: 82054377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_14
-      rect:
-        serializedVersion: 2
-        x: 2160
-        y: 540
-        width: 460
-        height: 540
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60097d82ae8ab414481fa9ba13c13115
-      internalID: -5629791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compile_sprite_naya_15
+      name: Strawberry_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 460
-        height: 540
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b81658b276089f845919a226f9fd703d
-      internalID: 1125780902
+      spriteID: b014665f0d442714f94f6298db4d4eeb
+      internalID: 1775669009216684005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: compile_sprite_naya_16
+      name: Strawberry_1
       rect:
         serializedVersion: 2
-        x: 540
+        x: 32
         y: 0
-        width: 460
-        height: 540
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -447,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8c5f6655e705824c9bc43f101d6c205
-      internalID: 2042688848
+      spriteID: 3114ce842c387444fa76380c1f9ff556
+      internalID: -32040429760078815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: compile_sprite_naya_17
+      name: Strawberry_2
       rect:
         serializedVersion: 2
-        x: 1080
+        x: 64
         y: 0
-        width: 460
-        height: 540
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b10fd62fba10e3e42a707f3a4477b646
-      internalID: 318037962
+      spriteID: 8546c3598613c30498ac9e085370e2ff
+      internalID: -7106730570939000684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: compile_sprite_naya_18
+      name: Strawberry_3
       rect:
         serializedVersion: 2
-        x: 1620
+        x: 96
         y: 0
-        width: 460
-        height: 540
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -489,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efc9a037be6e23140a9bf3150cd6c13f
-      internalID: -1597459531
+      spriteID: 77fd840cd3cc1ee4c8f58dcf2acbb63e
+      internalID: 4518513080991243510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: compile_sprite_naya_19
+      name: Strawberry_4
       rect:
         serializedVersion: 2
-        x: 2160
+        x: 128
         y: 0
-        width: 460
-        height: 540
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -510,8 +246,260 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2d96a6f8405ea54b82721f974c3e898
-      internalID: -848283721
+      spriteID: d18b9a1e54cf750489500ade3548c6df
+      internalID: 901954246582174200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strawberry_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5972f03615be72d4a9635493eab003e7
+      internalID: 825325050284003712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strawberry_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d89dd6b102c8c14593b09cf21661b9d
+      internalID: -5158240598457465908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strawberry_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0303e863bdad1574a8a427f102fd2084
+      internalID: 2009151386410624793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strawberry_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64fcb574b8d47504e8ec92b4224282cc
+      internalID: -8828998067812341462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strawberry_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76cfa977c050b00428148c07cb2c71b1
+      internalID: 7853139244501102106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strawberry_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416edeeb3d011e940a4ccce5f726537a
+      internalID: 7386868840556686860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strawberry_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28955d04894b411479c44edca177f86d
+      internalID: 9150055279739663228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strawberry_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbde23a1ca7d6c47b4a9c23444043ff
+      internalID: 8026213463552293463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strawberry_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0a55201ba9bf64b9bd8397973b4927
+      internalID: 6850229642150134582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strawberry_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12569415f799fe843877ef5bfdcaeefc
+      internalID: -7542899124980697566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strawberry_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2891da74b27dd2f41bc6f77b1fa9b3ab
+      internalID: -8532893379546982827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strawberry_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4867994873d744468e27e7c74fd7f97
+      internalID: 1433410794814771726
       vertices: []
       indices: 
       edges: []
@@ -527,26 +515,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      compile_sprite_naya_0: 1452783266
-      compile_sprite_naya_1: -1535340781
-      compile_sprite_naya_10: 982787235
-      compile_sprite_naya_11: 650987153
-      compile_sprite_naya_12: 2056210783
-      compile_sprite_naya_13: 82054377
-      compile_sprite_naya_14: -5629791
-      compile_sprite_naya_15: 1125780902
-      compile_sprite_naya_16: 2042688848
-      compile_sprite_naya_17: 318037962
-      compile_sprite_naya_18: -1597459531
-      compile_sprite_naya_19: -848283721
-      compile_sprite_naya_2: -1957203407
-      compile_sprite_naya_3: -998298727
-      compile_sprite_naya_4: 815126990
-      compile_sprite_naya_5: 121644872
-      compile_sprite_naya_6: 2052782795
-      compile_sprite_naya_7: 928988702
-      compile_sprite_naya_8: -2089778250
-      compile_sprite_naya_9: 297562113
+      Strawberry_0: 1775669009216684005
+      Strawberry_1: -32040429760078815
+      Strawberry_10: 7386868840556686860
+      Strawberry_11: 9150055279739663228
+      Strawberry_12: 8026213463552293463
+      Strawberry_13: 6850229642150134582
+      Strawberry_14: -7542899124980697566
+      Strawberry_15: -8532893379546982827
+      Strawberry_16: 1433410794814771726
+      Strawberry_2: -7106730570939000684
+      Strawberry_3: 4518513080991243510
+      Strawberry_4: 901954246582174200
+      Strawberry_5: 825325050284003712
+      Strawberry_6: -5158240598457465908
+      Strawberry_7: 2009151386410624793
+      Strawberry_8: -8828998067812341462
+      Strawberry_9: 7853139244501102106
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
