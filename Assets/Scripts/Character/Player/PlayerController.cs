@@ -35,11 +35,18 @@ public class PlayerController : MonoBehaviour
     Animator animator;
 
 
+    [Header("Fall Detector")]
+    //Detection
+    private Vector3 respawnPoint;
+    public GameObject fallDetector;
+
+
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        respawnPoint = transform.position;
     }
 
     // Update is called once per frame
@@ -49,6 +56,7 @@ public class PlayerController : MonoBehaviour
             PlayerVelocity();
         }
         Animations();
+        Detection();
     }
 
     void PlayerVelocity(){
@@ -109,6 +117,19 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("Jump",isGrounded());
     }
 
+
+    //Detection
+    void Detection(){
+        fallDetector.transform.position = new Vector2(transform.position.x,fallDetector.transform.position.y);
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Detection"){
+            transform.position = respawnPoint;
+        }
+    }
 
 
 
