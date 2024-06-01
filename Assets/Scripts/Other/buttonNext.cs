@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class buttonNext : MonoBehaviour
 {
-
-    public void MenuStart()
+    public void ContinueGame()
     {
-        SceneManager.LoadScene("ScenePembuka");
+        SceneManager.LoadScene("Level1");
     }
-
 }
