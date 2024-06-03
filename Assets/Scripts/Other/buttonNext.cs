@@ -7,6 +7,6 @@ public class buttonNext : MonoBehaviour
 {
     public void ContinueGame()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Testing");
     }
 }

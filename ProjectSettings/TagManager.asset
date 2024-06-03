@@ -7,6 +7,7 @@ TagManager:
   - Detection
   - Checkpoint
   - npc
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX

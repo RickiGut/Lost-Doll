@@ -32,13 +32,14 @@ public class ScriptDialog : MonoBehaviour
     private Sprite[] portrait;
 
     private bool dialogActivated;
-
     private int step;
+
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -46,31 +47,48 @@ public class ScriptDialog : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.F) && dialogActivated == true)
         {
-            if(step >= speaker.Length)
-            {
-                dialogCanvas.SetActive(false);
-                step = 0;
-            }else{
-                dialogCanvas.SetActive(true);
-                speakerText.text = speaker[step];
-                dialogText.text = dialogWords[step];
-                portraitImage.sprite = portrait[step];
-                step += 1;
-            }
+            ContinueDialog();
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    public void ContinueDialog(){
+        if(step >= speaker.Length)
+            {
+                if(dialogCanvas != null){
+                    dialogCanvas.SetActive(false);
+                }
+                step = 0;
+                Time.timeScale = 1;
+            }else{
+                if(dialogCanvas != null)
+                {
+                    dialogCanvas.SetActive(true);
+                }
+                if(speakerText != null && dialogText != null && portraitImage != null){
+                    speakerText.text = speaker[step];
+                    dialogText.text = dialogWords[step];
+                    portraitImage.sprite = portrait[step];
+
+                }
+                step += 1;
+                Time.timeScale = 0;
+            }
+    } 
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(collision.tag == "npc"){
+        if(other.CompareTag("Player")){
             dialogActivated = true;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if(collision.tag == "npc")
-        dialogActivated = false;
-        dialogCanvas.SetActive(false);
+        if(other.CompareTag("Player"))
+            dialogActivated = false;
+            dialogCanvas.SetActive(false);
     }
+
+
 }

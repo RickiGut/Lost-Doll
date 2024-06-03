@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D playerRb;
     public float moveSpeed = 5f;
     float horizMov;
-    SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
 
     //Jump
     [Header("Jump")]
@@ -42,6 +42,13 @@ public class PlayerController : MonoBehaviour
     //Health
     private bool isHurt = false;
 
+    private Transform oriParent;
+
+    [Header("Reset Position Object")]
+    //Reset Object
+    public GameObject[] resetPosObject;
+   
+
 
     // Start is called before the first frame update
     void Start()
@@ -49,7 +56,8 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         respawnPoint = transform.position;
-    }
+        oriParent = transform.parent;
+    }   
 
     // Update is called once per frame
     void Update()
@@ -66,12 +74,14 @@ public class PlayerController : MonoBehaviour
 
     }
     public void Move(InputAction.CallbackContext context){
-        if(horizMov > 0){
-            spriteRenderer.flipX = false;
-        }else if(horizMov < 0){
-            spriteRenderer.flipX = true;
+        if(Time.timeScale != 0){
+            horizMov = context.ReadValue<Vector2>().x;
+            if(horizMov > 0){
+                spriteRenderer.flipX = false;
+            }else if(horizMov < 0){
+                spriteRenderer.flipX = true;
+            }
         }
-        horizMov = context.ReadValue<Vector2>().x;
     }
 
     public void Jump(InputAction.CallbackContext context){
@@ -130,7 +140,8 @@ public class PlayerController : MonoBehaviour
     {
         if(other.tag == "Detection" && !isHurt){
            HealthManager.health--;
-             transform.position = respawnPoint;
+           transform.position = respawnPoint;
+           ResetPosObj();
            if(HealthManager.health <= 0){
              PlayerManager.isGameOver = true;
              gameObject.SetActive(false);
@@ -142,6 +153,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     IEnumerator GetHurt(){
         isHurt = true;
         Physics2D.IgnoreLayerCollision(7,8);
@@ -151,6 +163,15 @@ public class PlayerController : MonoBehaviour
         isHurt =false;
     }
 
+
+    void ResetPosObj(){
+        foreach(GameObject obj in resetPosObject){
+            if(obj !=null){
+            obj.GetComponent<ResetPosObj>().ResetPositionObject();
+
+            }
+        }
+    }
 
 
 }
