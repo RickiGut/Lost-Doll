@@ -3,81 +3,106 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemies2 : MonoBehaviour
+{public Transform pointA;
+ public Transform pointB;
+ public Transform player;
+ public float speed = 3.5f;
+ public float chaseRange = 5f;
+ public float stopChase = 5f;
+
+ private Vector3 oriPositionEnemies;
+ private Vector3 targetEnemies;
+ private bool isChasing = false;
+
+ //Flip X
+ SpriteRenderer spriteRenderEnemies;
+
+//Animator
+Animator animator;
+
+void Start()
 {
-   public Transform pointA;
-    public Transform pointB;
-    public Transform player;
-    public float speed = 2f;
-    public float chaseRange = 5f;
-    public float stopChaseRange = 7f;
-    private Vector3 oriPos;
-    private Vector3 target;
-    private bool isChasing = false;
+    oriPositionEnemies = transform.position;
+    targetEnemies = pointB.position;
+    spriteRenderEnemies = GetComponent<SpriteRenderer>();
+    animator = GetComponent<Animator>();
+}
 
-    // Start is called before the first frame update
-    void Start()
+void Update()
+{
+    float distanceToPlayer = Vector3.Distance(transform.position,player.position);
+    if(isChasing)
     {
-    oriPos = transform.position;
-    target = pointB.position;    
+     if(distanceToPlayer < stopChase)
+     {
+        ChasePlayer();
+     }else{
+        isChasing = false;
+        targetEnemies = GetNearestPatrolPoint();
+        animator.SetBool("PociNgejar",false);
+     }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        float distanceToPlayer = Vector3.Distance(transform.position,player.position);
-        if(isChasing)
+    else{
+        if(distanceToPlayer < chaseRange)
         {
-            if(distanceToPlayer < stopChaseRange)
-            {
-                chasePlayer();
-            }else
-            {
-                isChasing = false;
-                target = oriPos;
-            }
+            isChasing = true;
+            animator.SetBool("PociNgejar",true);
         }
         else{
-            if(distanceToPlayer < chaseRange)
-            {
-                isChasing = true;
-            }else{
-                Patrol();
-            }
-        }
-        MoveToTarget();
-    }
-
-
-    void Patrol()
-    {
-        if(transform.position == pointA.position)
-        {
-            target = pointB.position;
-        }else if(transform.position == pointB.position)
-        {
-            target = pointA.position;
+            Patrol();
         }
     }
+    MoveToTarget();
+}
 
-    void chasePlayer()
-    {
-        target = player.position;
-    }
 
-    void MoveToTarget()
+void Patrol()
+{
+    if(Vector3.Distance(transform.position,pointA.position) < 0.1f)
     {
-        transform.position = Vector3.MoveTowards(transform.position,target,speed*Time.deltaTime);
+        targetEnemies = pointB.position;
+        spriteRenderEnemies.flipX = false;
+    }else if(Vector3.Distance(transform.position,pointB.position) < 0.1f)
+    {
+        targetEnemies = pointA.position;
+        spriteRenderEnemies.flipX = true;
     }
+}
+
+void ChasePlayer()
+{
+    targetEnemies = player.position;
+    if(player.position.x > transform.position.x)
+    {
+        spriteRenderEnemies.flipX = false;
+    }else{
+        spriteRenderEnemies.flipX = true;
+    }
+}
+
+void MoveToTarget()
+{
+    transform.position = Vector3.MoveTowards(transform.position,targetEnemies,speed * Time.deltaTime);
+}
+
+Vector3 GetNearestPatrolPoint()
+{
+    float distanceToPointA = Vector3.Distance(transform.position,pointA.position);
+    float distanceToPointB = Vector3.Distance(transform.position,pointB.position);
+
+    return distanceToPointA < distanceToPointB ? pointA.position : pointB.position;
+}
 
     void OnDrawGizmos()
     {
         if(pointA != null && pointB != null)
         {
-            Gizmos.color = Color.yellow;
+            Gizmos.color = Color.red;
             Gizmos.DrawLine(pointA.position,pointB.position);
         }
-
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(transform.position,stopChaseRange);
+        Gizmos.DrawWireSphere(transform.position,chaseRange);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position,stopChase);
     }
 }

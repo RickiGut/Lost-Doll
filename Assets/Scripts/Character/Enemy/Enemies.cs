@@ -13,10 +13,18 @@ public class Enemies : MonoBehaviour
  private Vector3 targetEnemies;
  private bool isChasing = false;
 
+ //Flip X
+ SpriteRenderer spriteRenderEnemies;
+
+//Animator
+Animator animator;
+
 void Start()
 {
     oriPositionEnemies = transform.position;
     targetEnemies = pointB.position;
+    spriteRenderEnemies = GetComponent<SpriteRenderer>();
+    animator = GetComponent<Animator>();
 }
 
 void Update()
@@ -30,12 +38,14 @@ void Update()
      }else{
         isChasing = false;
         targetEnemies = GetNearestPatrolPoint();
+        animator.SetBool("kuntiNgejar",false);
      }
     }
     else{
         if(distanceToPlayer < chaseRange)
         {
             isChasing = true;
+            animator.SetBool("kuntiNgejar",true);
         }
         else{
             Patrol();
@@ -50,15 +60,23 @@ void Patrol()
     if(Vector3.Distance(transform.position,pointA.position) < 0.1f)
     {
         targetEnemies = pointB.position;
+        spriteRenderEnemies.flipX = false;
     }else if(Vector3.Distance(transform.position,pointB.position) < 0.1f)
     {
         targetEnemies = pointA.position;
+        spriteRenderEnemies.flipX = true;
     }
 }
 
 void ChasePlayer()
 {
     targetEnemies = player.position;
+    if(player.position.x > transform.position.x)
+    {
+        spriteRenderEnemies.flipX = false;
+    }else{
+        spriteRenderEnemies.flipX = true;
+    }
 }
 
 void MoveToTarget()
