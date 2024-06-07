@@ -45,3 +45,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 4257769683
+    locked: 0
+  - name: Property
+    uniqueID: 579048711
+    locked: 0
+  - name: Ground
+    uniqueID: 1558593755
+    locked: 0
+  - name: NPC
+    uniqueID: 3967488779
+    locked: 0
+  - name: Player
+    uniqueID: 3410054735
+    locked: 0
+  - name: Foregound
+    uniqueID: 3353942417
+    locked: 0
