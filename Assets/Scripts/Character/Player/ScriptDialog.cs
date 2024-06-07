@@ -34,14 +34,6 @@ public class ScriptDialog : MonoBehaviour
     private bool dialogActivated;
     private int step;
 
-    
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {

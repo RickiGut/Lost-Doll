@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 
     public void MenuStart()
     {
-        SceneManager.LoadScene("Testing");
+        SceneManager.LoadScene("ScenePembuka");
     }
 
 }
