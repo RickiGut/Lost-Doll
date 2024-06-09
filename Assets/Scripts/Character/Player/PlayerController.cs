@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -49,6 +51,10 @@ public class PlayerController : MonoBehaviour
     public GameObject[] resetPosObject;
    
 
+   //Collect
+   int score = 0;
+   public TextMeshProUGUI scoreText;
+   private CollectSave[] allCollect;
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +63,32 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         respawnPoint = transform.position;
         oriParent = transform.parent;
+
+        //Posisi Player diambil dari playerprefs
+        float PosX = PlayerPrefs.GetFloat("PlayerPosX",transform.position.x);
+        float PosY = PlayerPrefs.GetFloat("PlayerPosY",transform.position.y);
+        float PosZ = PlayerPrefs.GetFloat("PlayerPosZ",transform.position.z);
+        transform.position = new Vector3(PosX,PosY,PosZ);
+
+        //Ambil Health dari Playerprefs
+        HealthManager.health = PlayerPrefs.GetInt("playerHealth",HealthManager.health);
+
+        //Score
+        score = PlayerPrefs.GetInt("intScore");
+        scoreText.text = score.ToString();
+
+        //Collectables
+        allCollect = FindObjectsOfType<CollectSave>();
+        foreach(CollectSave collectSoul in allCollect){
+            if(PlayerManager.isGameOver){
+                collectSoul.Reset();
+                print("Ini berjalan brow");
+            }else{
+                collectSoul.LoadCollect();
+            }
+            
+        }
+
     }   
 
     // Update is called once per frame
@@ -143,13 +175,28 @@ public class PlayerController : MonoBehaviour
            transform.position = respawnPoint;
            ResetPosObj();
            if(HealthManager.health <= 0){
-             PlayerManager.isGameOver = true;
-             gameObject.SetActive(false);
+            PlayerManager.isGameOver = true;
+            gameObject.SetActive(false);
+            DeletePlayerPrefs();
+            foreach(CollectSave collectSoul in allCollect){
+                collectSoul.Reset();
+            }
            }else{
             StartCoroutine(GetHurt());
            }
         }else if(other.tag == "Checkpoint"){
             respawnPoint = transform.position;
+            CollectPlayerPrefs();   
+        }else if(other.tag == "Collect"){
+            CollectSave saveCollect = other.GetComponent<CollectSave>();
+            if(saveCollect != null){
+                saveCollect.Take();
+                score +=1;
+                scoreText.text = score.ToString();
+                other.gameObject.SetActive(false);
+       
+            }
+
         }
     }
 
@@ -173,5 +220,33 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void CollectPlayerPrefs(){
+            //PlayerPrefs posisi Player
+            PlayerPrefs.SetFloat("PlayerPosX",transform.position.x);
+            PlayerPrefs.SetFloat("PlayerPosY",transform.position.y);
+            PlayerPrefs.SetFloat("PlayerPosZ",transform.position.z);
+            print("Position sudah tersave");
+
+            //Playerprefs Health player
+            PlayerPrefs.SetInt("playerHealth",HealthManager.health);
+
+            //Score
+            PlayerPrefs.SetInt("intScore",score);
+    
+            //Saved Scene
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            PlayerPrefs.SetString("SavedScene",currentSceneName);
+            PlayerPrefs.Save();
+            Debug.Log("Chekpoint " + currentSceneName + "Telah disimpan");
+    }
+
+    void DeletePlayerPrefs(){
+        PlayerPrefs.DeleteKey("PlayerPosX");
+        PlayerPrefs.DeleteKey("PlayerPosY");
+        PlayerPrefs.DeleteKey("PlayerPosZ");
+        PlayerPrefs.DeleteKey("playerHealth");
+        PlayerPrefs.DeleteKey("intScore");
+   
+    }
 
 }
