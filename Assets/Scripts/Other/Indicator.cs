@@ -5,10 +5,13 @@ using UnityEngine;
 public class Indicator : MonoBehaviour
 {
     public GameObject FIndicator;
+    public GameObject BgIndicator;
+
     // Start is called before the first frame update
     void Start()
     {
         FIndicator.SetActive(false);
+        BgIndicator.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,6 +25,7 @@ public class Indicator : MonoBehaviour
             if(other.CompareTag("Player"))
             {
                 FIndicator.SetActive(true);
+                BgIndicator.SetActive(true);
                 print("Hello");
             }
         }
@@ -31,6 +35,12 @@ public class Indicator : MonoBehaviour
             if(other.CompareTag("Player"))
             {
                 FIndicator.SetActive(false);
+                BgIndicator.SetActive(false);
             }
         }
+
+     public void HideIndicator(){
+        FIndicator.SetActive(false);
+        BgIndicator.SetActive(false);
+    }
 }

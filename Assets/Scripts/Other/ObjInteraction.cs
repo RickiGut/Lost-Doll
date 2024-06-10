@@ -7,6 +7,7 @@ public class ObjInteraction : MonoBehaviour
 {
     public string objectDesc;
     public GameObject EIndicator;
+    public GameObject BGEIndicator;
     public GameObject descriptionPanel;
     public TextMeshProUGUI descText;
 
@@ -15,6 +16,7 @@ public class ObjInteraction : MonoBehaviour
     void Start()
     {
         EIndicator.SetActive(false);
+        BGEIndicator.SetActive(false);
         descriptionPanel.SetActive(false);
     }
 
@@ -45,6 +47,7 @@ public class ObjInteraction : MonoBehaviour
             if(other.CompareTag("Player"))
             {
                 EIndicator.SetActive(true);
+                BGEIndicator.SetActive(true);
                 isPlayerNear = true;
             }
         }
@@ -54,6 +57,7 @@ public class ObjInteraction : MonoBehaviour
             if(other.CompareTag("Player"))
             {
                 EIndicator.SetActive(false);
+                BGEIndicator.SetActive(false);
                 isPlayerNear = false;
                 DescriptionHide();
             }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a7f6685e97e259a4ca790cf8c0505910
+guid: 3d5983f91115bbb4d8a5fc14317f8aff
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 540
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite_blue_spirit_00_0
+      name: pause_button_UI_02_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 430
+        x: 217
+        y: 220
+        width: 31
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1864c0c0dcfde4d9c42547efa29d90
+      internalID: -307786615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pause_button_UI_02_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 222
+        width: 31
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288415554b43d0944b514a7a3e1ccc50
+      internalID: -1822927207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pause_button_UI_02_2
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 263
         width: 5
-        height: 16
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,113 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0564e4a16ee7054f8a84b54b9175e7e
-      internalID: 1728979806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite_blue_spirit_00_1
-      rect:
-        serializedVersion: 2
-        x: 2372
-        y: 171
-        width: 328
-        height: 275
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d947dd04752790b46af51bed816a541c
-      internalID: -539010776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite_blue_spirit_00_2
-      rect:
-        serializedVersion: 2
-        x: 220
-        y: 177
-        width: 109
-        height: 211
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20c92de8060ddd94d9bd6d886ee141b4
-      internalID: -2014568315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite_blue_spirit_00_3
-      rect:
-        serializedVersion: 2
-        x: 759
-        y: 173
-        width: 116
-        height: 210
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2cc681a79cbf4c541a98eae95b116002
-      internalID: 809866603
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite_blue_spirit_00_4
-      rect:
-        serializedVersion: 2
-        x: 1299
-        y: 175
-        width: 116
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 654d0b791a4f54649b3109b54574a2c9
-      internalID: 1656570646
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite_blue_spirit_00_5
-      rect:
-        serializedVersion: 2
-        x: 1841
-        y: 171
-        width: 111
-        height: 213
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9317e4f1558e0b94cafd5bef0ab63ffd
-      internalID: -842708340
+      spriteID: 36f352b837b1cf643ae24868bd1db32e
+      internalID: 1284723264
       vertices: []
       indices: 
       edges: []
@@ -233,12 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sprite_blue_spirit_00_0: 1728979806
-      sprite_blue_spirit_00_1: -539010776
-      sprite_blue_spirit_00_2: -2014568315
-      sprite_blue_spirit_00_3: 809866603
-      sprite_blue_spirit_00_4: 1656570646
-      sprite_blue_spirit_00_5: -842708340
+      pause_button_UI_02_0: -307786615
+      pause_button_UI_02_1: -1822927207
+      pause_button_UI_02_2: 1284723264
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

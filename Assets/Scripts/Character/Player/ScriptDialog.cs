@@ -34,6 +34,9 @@ public class ScriptDialog : MonoBehaviour
     private bool dialogActivated;
     private int step;
 
+    void Start(){
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -81,6 +84,8 @@ public class ScriptDialog : MonoBehaviour
             dialogActivated = false;
             dialogCanvas.SetActive(false);
     }
+
+    
 
 
 }
