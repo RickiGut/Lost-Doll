@@ -51,6 +51,10 @@ public class PlayerController : MonoBehaviour
     public GameObject[] resetPosObject;
    
 
+    //Audio 
+    private AudioManager audioManager;
+
+
    //Collect
    int score = 0;
    public TextMeshProUGUI scoreText;
@@ -89,6 +93,9 @@ public class PlayerController : MonoBehaviour
             
         }
 
+        //Audio
+        audioManager = FindObjectOfType<AudioManager>();
+
     }   
 
     // Update is called once per frame
@@ -107,6 +114,7 @@ public class PlayerController : MonoBehaviour
     }
     public void Move(InputAction.CallbackContext context){
         if(Time.timeScale != 0){
+            audioManager.PlaySFX(audioManager.playerRun);
             horizMov = context.ReadValue<Vector2>().x;
             if(horizMov > 0){
                 spriteRenderer.flipX = false;
@@ -119,6 +127,7 @@ public class PlayerController : MonoBehaviour
     public void Jump(InputAction.CallbackContext context){
         if(isGrounded()){
             if(context.performed){
+                audioManager.PlaySFX(audioManager.playerJump);
                 playerRb.velocity = new Vector2(playerRb.velocity.x,jumpPower);
             }else if(context.canceled){
                 playerRb.velocity = new Vector2(playerRb.velocity.x,playerRb.velocity.y * 0.5f);
