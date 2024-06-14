@@ -9,6 +9,7 @@ TagManager:
   - npc
   - MovingPlatform
   - Collect
+  - Bush
   layers:
   - Default
   - TransparentFX

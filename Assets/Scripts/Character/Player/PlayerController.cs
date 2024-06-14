@@ -60,6 +60,12 @@ public class PlayerController : MonoBehaviour
    public TextMeshProUGUI scoreText;
    private CollectSave[] allCollect;
 
+    //Hide
+    private bool isInHide = false;
+    private Collider2D colliderPlayer;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -96,6 +102,12 @@ public class PlayerController : MonoBehaviour
         //Audio
         audioManager = FindObjectOfType<AudioManager>();
 
+        //
+        colliderPlayer = GetComponent<Collider2D>();
+
+        //
+        PlayerPrefs.GetInt("NPCSpirit_Met");
+
     }   
 
     // Update is called once per frame
@@ -106,6 +118,19 @@ public class PlayerController : MonoBehaviour
         }
         Animations();
         Detection();
+        
+    if(Input.GetKey(KeyCode.S)){
+        playerRb.simulated = false;
+        spriteRenderer.enabled = false;
+        isInHide = true;
+        colliderPlayer.enabled = false;
+    }else if(!Input.GetKey(KeyCode.S)){
+        playerRb.simulated = true;
+        spriteRenderer.enabled = true;
+        isInHide = false;
+        colliderPlayer.enabled = true;
+     }
+
     }
 
     void PlayerVelocity(){
@@ -179,7 +204,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Detection" && !isHurt){
+        if(other.tag == "Detection" && !isHurt && isInHide == false){
            HealthManager.health--;
            transform.position = respawnPoint;
            ResetPosObj();

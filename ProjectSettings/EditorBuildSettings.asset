@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/WIP/Programmer/Testing2.unity
     guid: 044372f2a2d47094cb48cda8b61bc05f
   - enabled: 1
+    path: Assets/WIP/Programmer/Testing3.unity
+    guid: 71efcb5d4d28a9046ac84e5ce024ebe3
+  - enabled: 1
     path: Assets/WIP/Environment/Level1.unity
     guid: 4a2c1d2b1c21f824eb43df661e625cd7
   - enabled: 1
