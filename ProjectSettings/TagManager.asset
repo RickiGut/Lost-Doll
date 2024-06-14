@@ -62,6 +62,9 @@ TagManager:
   - name: Player
     uniqueID: 3410054735
     locked: 0
+  - name: Particle
+    uniqueID: 4214879609
+    locked: 0
   - name: Foregound
     uniqueID: 3353942417
     locked: 0
