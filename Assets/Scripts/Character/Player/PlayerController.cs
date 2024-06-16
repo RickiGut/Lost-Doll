@@ -58,11 +58,12 @@ public class PlayerController : MonoBehaviour
    //Collect
    int score = 0;
    public TextMeshProUGUI scoreText;
-   private CollectSave[] allCollect;
 
+   private CollectSave[] allCollect;
     //Hide
-    private bool isInHide = false;
+    private bool isInBush = false;
     private Collider2D colliderPlayer;
+    private bool isHiding = false;
 
 
 
@@ -89,6 +90,7 @@ public class PlayerController : MonoBehaviour
 
         //Collectables
         allCollect = FindObjectsOfType<CollectSave>();
+        Debug.Log("Jumlah Collect " + allCollect);
         foreach(CollectSave collectSoul in allCollect){
             if(PlayerManager.isGameOver){
                 collectSoul.Reset();
@@ -118,19 +120,28 @@ public class PlayerController : MonoBehaviour
         }
         Animations();
         Detection();
-        
-    if(Input.GetKey(KeyCode.S)){
-        playerRb.simulated = false;
-        spriteRenderer.enabled = false;
-        isInHide = true;
-        colliderPlayer.enabled = false;
-    }else if(!Input.GetKey(KeyCode.S)){
-        playerRb.simulated = true;
-        spriteRenderer.enabled = true;
-        isInHide = false;
-        colliderPlayer.enabled = true;
-     }
+        Hide();        
 
+    }
+
+    void Hide(){
+        if(Input.GetKey(KeyCode.S) && isInBush == true){
+            playerRb.simulated = false;
+            spriteRenderer.enabled = false;
+            colliderPlayer.enabled = false;
+            isHiding = true;
+            IsHiding();
+        }else if(!Input.GetKey(KeyCode.S)){
+            playerRb.simulated = true;
+            spriteRenderer.enabled = true;
+            colliderPlayer.enabled = true;
+            isHiding = false;
+        }
+    }
+
+    public bool IsHiding(){
+        Debug.Log("Hiding sekarang : " + isHiding);
+        return isHiding;
     }
 
     void PlayerVelocity(){
@@ -204,7 +215,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Detection" && !isHurt && isInHide == false){
+        if(other.tag == "Detection" && !isHurt){
            HealthManager.health--;
            transform.position = respawnPoint;
            ResetPosObj();
@@ -230,7 +241,16 @@ public class PlayerController : MonoBehaviour
                 other.gameObject.SetActive(false);
        
             }
+        }else if(other.tag == "Bush"){
+            isInBush = true;
+            print("Is Inn Bush : " + isInBush);
+        }
+    }
 
+    
+    private void OnTriggerExit2D(Collider2D other){
+        if(other.tag == "Bush"){
+            isInBush = false;
         }
     }
 

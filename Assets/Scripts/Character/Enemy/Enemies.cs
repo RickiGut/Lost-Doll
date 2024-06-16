@@ -16,6 +16,10 @@ public class Enemies : MonoBehaviour
  //Flip X
  SpriteRenderer spriteRenderEnemies;
 
+//Player
+private PlayerController playerController;
+
+
 //Animator
 Animator animator;
 
@@ -25,6 +29,7 @@ void Start()
     targetEnemies = pointB.position;
     spriteRenderEnemies = GetComponent<SpriteRenderer>();
     animator = GetComponent<Animator>();
+    playerController = player.GetComponent<PlayerController>();
 }
 
 void Update()
@@ -32,18 +37,25 @@ void Update()
     float distanceToPlayer = Vector3.Distance(transform.position,player.position);
     if(isChasing)
     {
-     if(distanceToPlayer < stopChase)
+        if(playerController != null && playerController.IsHiding()){
+            speed = 2;
+            isChasing = false;
+            animator.SetBool("kuntiNgejar",false);
+            targetEnemies = GetClosestPatrolPoint();
+        }else if(distanceToPlayer < stopChase)
      {
         ChasePlayer();
      }else{
+        speed = 2;
         isChasing = false;
-        targetEnemies = GetNearestPatrolPoint();
+        targetEnemies = GetClosestPatrolPoint();
         animator.SetBool("kuntiNgejar",false);
      }
     }
     else{
-        if(distanceToPlayer < chaseRange)
+        if(distanceToPlayer < chaseRange && (playerController == null || !playerController.IsHiding()))
         {
+            speed = 4;
             isChasing = true;
             animator.SetBool("kuntiNgejar",true);
         }
@@ -84,15 +96,17 @@ void MoveToTarget()
     transform.position = Vector3.MoveTowards(transform.position,targetEnemies,speed * Time.deltaTime);
 }
 
-Vector3 GetNearestPatrolPoint()
+Vector3 GetClosestPatrolPoint()
 {
-    float distanceToPointA = Vector3.Distance(transform.position,pointA.position);
-    float distanceToPointB = Vector3.Distance(transform.position,pointB.position);
-
-    return distanceToPointA < distanceToPointB ? pointA.position : pointB.position;
+    //Kembali ke titik patroli terdekat
+    if(Vector3.Distance(transform.position,pointA.position) < Vector3.Distance(transform.position,pointB.position)){
+        return pointA.position;
+    }else{
+        return pointB.position;
+    }
 }
 
-    void OnDrawGizmos()
+void OnDrawGizmos()
     {
         if(pointA != null && pointB != null)
         {

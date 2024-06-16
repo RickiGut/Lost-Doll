@@ -9,6 +9,7 @@ public class ObjInteraction : MonoBehaviour
     public GameObject EIndicator;
     public GameObject BGEIndicator;
     public GameObject descriptionPanel;
+    public GameObject PanelBg;
     public TextMeshProUGUI descText;
 
     private bool isPlayerNear = false;
@@ -18,6 +19,7 @@ public class ObjInteraction : MonoBehaviour
         EIndicator.SetActive(false);
         BGEIndicator.SetActive(false);
         descriptionPanel.SetActive(false);
+        PanelBg.SetActive(false);
     }
 
     // Update is called once per frame
@@ -31,6 +33,7 @@ public class ObjInteraction : MonoBehaviour
      
         void DescriptionShow(){
             descriptionPanel.SetActive(true);
+            PanelBg.SetActive(true);
             descText.text = objectDesc;
             Time.timeScale = 0;
         }
@@ -39,6 +42,7 @@ public class ObjInteraction : MonoBehaviour
        public void DescriptionHide()
         {
             descriptionPanel.SetActive(false);
+            PanelBg.SetActive(false);
             Time.timeScale = 1;
         }
 
