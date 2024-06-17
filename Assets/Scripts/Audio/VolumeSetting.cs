@@ -11,12 +11,17 @@ public class VolumeSetting : MonoBehaviour
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider SfxSlider;
 
+    private float defaultMusicVolume = 0.5f;
+    private float defaultSfxVolume = 0.6f;
+
     // Start is called before the first frame update
     void Start()
     {
-        if(PlayerPrefs.HasKey("musicVolume")){
+        if(PlayerPrefs.HasKey("musicVolume")&& PlayerPrefs.HasKey("SfxVolume")){
             LoadVolume();
         }else{
+            musicSlider.value = defaultMusicVolume;
+            SfxSlider.value = defaultSfxVolume;
             SetMusicVolume();
             SetSfxVolume();
         }

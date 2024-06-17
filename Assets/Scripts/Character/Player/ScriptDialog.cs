@@ -39,12 +39,24 @@ public class ScriptDialog : MonoBehaviour
     private CollectSave[] allCollect;
 
     private string[] data ;
+    
+    public GameObject canvasTextSoul;
+    public TextMeshProUGUI textCariSoul;
+    bool semuaTerkumpul;
 
     void Start(){
         
         data = new String[]{
-            "Halo Dunia","Baik kawan,kau gimana?",""};
+            "Excuse me, Grandma, do you know where this place is? I'm Nayla, I'm lost here. I'm looking for my teddy bear, did Grandma see it?",
+            "Nduk, awakmu saiki enek ing donya ne para lelembut. Nyapo cah ayu bisa nyasar rene?",
+            "What Grandma? Nayla doesn't understand what Grandma is talking about.",
+            "Cah ayu, awakmu kudu kondur ing donya manungsa. Nanging, awakmu kudu nggoleki sepuluh jiwa dhisik.Yen wes ketemu, cah ayu bisa kondur menyang donya ne para manungsa. Ati - ati ya cah ayu",
+            "I don't understand what the Grandma meant. But I'm sure she gave a clue. I'll keep going then.",
+            ""};
+
             UpdateCollectList();        
+            // textCariSoul.gameObject.SetActive(false);
+            canvasTextSoul.SetActive(false);
     }
 
     // Update is called once per frame
@@ -71,12 +83,18 @@ public class ScriptDialog : MonoBehaviour
                     }
                     step = 0;
                     Time.timeScale = 1;                    
-                    PlayerPrefs.DeleteKey("intScore");
+                    // PlayerPrefs.DeleteKey("intScore");
+                    if(!semuaTerkumpul){
+                        canvasTextSoul.SetActive(true);
+                    }else{
+                        canvasTextSoul.SetActive(false);
+                    }
+                    // textCariSoul.gameObject.SetActive(true);
                 }
                 else{
                     
                     UpdateCollectList();
-                    bool semuaTerkumpul = true;
+                    semuaTerkumpul = true;
                     foreach(CollectSave collectSoul in allCollect){
                         collectSoul.LoadCollect();
                         if(PlayerPrefs.GetInt(collectSoul.collectId,0) != 1){
@@ -87,10 +105,13 @@ public class ScriptDialog : MonoBehaviour
                     }
                         // jalanBuntuCollider.SetActive(true);
                     if(!semuaTerkumpul){
-                    data[2] = $"Aku baik juga,kamu tinggal mengumpulkan {allCollect.Length} collect lagi";
+                        data[5] = $"Awakmu tinggal ngumpulake {allCollect.Length} soul maneh";
+                    textCariSoul.text = $"You need to find {allCollect.Length} more souls";
                         Debug.Log("Kamu kurang " + allCollect.Length);
                     }else{
-                        data[2] = $"Bagus kamu sudah mendapatkan semua collect";
+                        canvasTextSoul.SetActive(false);
+                        // textCariSoul.gameObject.SetActive(false);
+                        data[5] = $"Bagus cah ayu, saiki yen awakmu metu saka kene, awakmu mung kudu ngetutake jalur iki, mengko awakmu bakal ketemu karo wong.";
                         Debug.Log("Bagus");
                         jalanBuntuCollider.SetActive(false);
                     }

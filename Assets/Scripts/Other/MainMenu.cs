@@ -59,6 +59,10 @@ public class MainMenu : MonoBehaviour
     }
 
 
+    public void QuitGame(){
+        Application.Quit();
+    }
+
     public void CloseLoadEmptyPanel(){
        audioManager.PlaySFX(audioManager.MenuButton);
         PanelEmptyLoad.SetActive(false);

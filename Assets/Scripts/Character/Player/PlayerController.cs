@@ -65,6 +65,8 @@ public class PlayerController : MonoBehaviour
     private Collider2D colliderPlayer;
     private bool isHiding = false;
 
+    //Pembuka
+    public GameObject BgAwal;
 
 
     // Start is called before the first frame update
@@ -110,6 +112,8 @@ public class PlayerController : MonoBehaviour
         //
         PlayerPrefs.GetInt("NPCSpirit_Met");
 
+        BgAwal.SetActive(true);
+
     }   
 
     // Update is called once per frame
@@ -121,7 +125,6 @@ public class PlayerController : MonoBehaviour
         Animations();
         Detection();
         Hide();        
-
     }
 
     void Hide(){
@@ -258,7 +261,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator GetHurt(){
         isHurt = true;
         Physics2D.IgnoreLayerCollision(7,8);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0);
 
         Physics2D.IgnoreLayerCollision(7,8,false);
         isHurt =false;

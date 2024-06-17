@@ -11672,8 +11672,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90, y: 60}
-  m_SizeDelta: {x: 137.7334, y: 216.2585}
+  m_AnchoredPosition: {x: 52, y: 117.16995}
+  m_SizeDelta: {x: 291.48, y: 352.8673}
   m_Pivot: {x: 0.046367474, y: 0.9784883}
 --- !u!1 &148712206
 GameObject:
@@ -19480,7 +19480,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tutup
+  m_text: Close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
   m_sharedMaterial: {fileID: 5334336793343384645, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
@@ -26969,7 +26969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -179, y: 71}
+  m_AnchoredPosition: {x: -179, y: 88}
   m_SizeDelta: {x: 281.68, y: 50}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &611133514
@@ -27867,8 +27867,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -450, y: -294}
-  m_SizeDelta: {x: -1100, y: -1023.27}
+  m_AnchoredPosition: {x: -433, y: -174.0325}
+  m_SizeDelta: {x: -1100, y: -959.335}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647965881
 MonoBehaviour:
@@ -35948,7 +35948,7 @@ GameObject:
   - component: {fileID: 845409638}
   - component: {fileID: 845409637}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Teks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36022,8 +36022,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -36058,7 +36058,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -39.106445, w: 0}
+  m_margin: {x: 0, y: 0, z: -111.94116, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -36088,7 +36088,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -378}
+  m_AnchoredPosition: {x: -116, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &855570413
@@ -36148,7 +36148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tutup
+  m_text: Close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
   m_sharedMaterial: {fileID: 5334336793343384645, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
@@ -43720,8 +43720,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -416.125}
-  m_SizeDelta: {x: -200, y: -903.8499}
+  m_AnchoredPosition: {x: 0, y: -372.75}
+  m_SizeDelta: {x: -200, y: -817.0999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1022174699
 MonoBehaviour:
@@ -43940,7 +43940,7 @@ Transform:
   m_GameObject: {fileID: 1048738907}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.65, y: -2.4114935, z: 1.9682491}
+  m_LocalPosition: {x: -5.75, y: -2.4114935, z: 1.9682491}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -49086,6 +49086,108 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410999072}
   m_CullTransparentMesh: 1
+--- !u!1 &1413571879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1413571883}
+  - component: {fileID: 1413571882}
+  - component: {fileID: 1413571881}
+  - component: {fileID: 1413571880}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1413571880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413571879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1413571881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413571879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1413571882
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413571879}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1413571883
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413571879}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1797487660}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1414687146
 GameObject:
   m_ObjectHideFlags: 0
@@ -54914,7 +55016,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef05a288a10885340a5c574a0d0676af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectDesc: Sebentar lagi kita akan angkat piala
+  objectDesc: "Ask that old lady what you want to know. Hurry up, it\u2019s going
+    to get darker!"
   EIndicator: {fileID: 629589701}
   BGEIndicator: {fileID: 1453490301}
   descriptionPanel: {fileID: 566058260}
@@ -60707,7 +60810,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef05a288a10885340a5c574a0d0676af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectDesc: Untuk saat ini ,sebagai papan kedua adalah perwakilannya
+  objectDesc: The atmosphere here feels very cold, this is the spirit world. There
+    are many ghosts here and don't let them catch you. Try to find an old lady here
+    who can help you!
   EIndicator: {fileID: 454969993}
   BGEIndicator: {fileID: 1809947929}
   descriptionPanel: {fileID: 747445321}
@@ -61469,7 +61574,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tutup
+  m_text: Close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
   m_sharedMaterial: {fileID: 5334336793343384645, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
@@ -61762,7 +61867,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef05a288a10885340a5c574a0d0676af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectDesc: Ini adalah Papan pertama
+  objectDesc: Be careful, there is a ghost that will chase you. Hide behind bushes
+    or rocks before the ghost catches you.
   EIndicator: {fileID: 1522677344}
   BGEIndicator: {fileID: 697984518}
   descriptionPanel: {fileID: 922412206}
@@ -68492,7 +68598,7 @@ Transform:
   m_GameObject: {fileID: 1771805980}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -83.17, y: -0.24, z: 0}
+  m_LocalPosition: {x: -78.48, y: -0.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73163,6 +73269,140 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c636107d495a45d4fa392f3cf480b8ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1797487659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1797487660}
+  - component: {fileID: 1797487662}
+  - component: {fileID: 1797487661}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1797487660
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797487659}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1413571883}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -308, y: 135}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1797487661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797487659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
+  m_sharedMaterial: {fileID: 5334336793343384645, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 70
+  m_fontSizeBase: 70
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -625.3496, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1797487662
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797487659}
+  m_CullTransparentMesh: 1
 --- !u!1 &1802603567
 GameObject:
   m_ObjectHideFlags: 0
@@ -74406,11 +74646,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2977853379113691002, guid: e42eb5c4e31a64c4aa7fbf648559bbb1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -119.9
       objectReference: {fileID: 0}
     - target: {fileID: 2977853379113691002, guid: e42eb5c4e31a64c4aa7fbf648559bbb1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.9
+      value: -8.07
       objectReference: {fileID: 0}
     - target: {fileID: 3780593500868416220, guid: e42eb5c4e31a64c4aa7fbf648559bbb1, type: 3}
       propertyPath: m_Name
@@ -74842,7 +75082,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -6.360016}
+  m_AnchoredPosition: {x: 96, y: -24}
   m_SizeDelta: {x: 0, y: -12.719998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1905229050
@@ -81889,9 +82129,12 @@ MonoBehaviour:
   dialogText: {fileID: 1905229051}
   portraitImage: {fileID: 144440224}
   speaker:
-  - Nenek Darminha
   - Nayla
-  - Nenek Darminha
+  - Darminha Grandma
+  - Nayla
+  - Darminha Grandma
+  - Nayla
+  - Darminha Grandma
   dialogWords:
   - 'Selamat datang di Dunia Arwah!!!
 
@@ -81900,11 +82143,18 @@ MonoBehaviour:
 
     kau mau tau???'
   - Yeahh
+  - Yeahh
+  - Yeahh
   portrait:
+  - {fileID: 1452783266, guid: cc61aaf7044297a4f98f80a9c000b7a4, type: 3}
+  - {fileID: -1145658702, guid: 03a5f18a7a5fe014fb8aa75fca1354f2, type: 3}
+  - {fileID: 1452783266, guid: cc61aaf7044297a4f98f80a9c000b7a4, type: 3}
   - {fileID: -1145658702, guid: 03a5f18a7a5fe014fb8aa75fca1354f2, type: 3}
   - {fileID: 1452783266, guid: cc61aaf7044297a4f98f80a9c000b7a4, type: 3}
   - {fileID: -1145658702, guid: 03a5f18a7a5fe014fb8aa75fca1354f2, type: 3}
   jalanBuntuCollider: {fileID: 1121518873}
+  canvasTextSoul: {fileID: 1413571879}
+  textCariSoul: {fileID: 1797487661}
 --- !u!212 &2101037690
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -82893,6 +83143,38 @@ PrefabInstance:
       propertyPath: portraitImage
       value: 
       objectReference: {fileID: 144440224}
+    - target: {fileID: 29607060104593364, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: speaker.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 29607060104593364, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: portrait.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 29607060104593364, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: speaker.Array.data[2]
+      value: Nayla
+      objectReference: {fileID: 0}
+    - target: {fileID: 29607060104593364, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 29607060104593364, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: portrait.Array.data[2]
+      value: 
+      objectReference: {fileID: 1452783266, guid: cc61aaf7044297a4f98f80a9c000b7a4, type: 3}
+    - target: {fileID: 29607060104593364, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.data[0]
+      value: "Does this blue light actually want to help me?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 29607060104593364, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.data[1]
+      value: Play with me...
+      objectReference: {fileID: 0}
+    - target: {fileID: 29607060104593364, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.data[2]
+      value: What!? You can talk??
+      objectReference: {fileID: 0}
     - target: {fileID: 162343542589673625, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
       propertyPath: dialogText
       value: 
@@ -82909,6 +83191,38 @@ PrefabInstance:
       propertyPath: portraitImage
       value: 
       objectReference: {fileID: 144440224}
+    - target: {fileID: 162343542589673625, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: speaker.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 162343542589673625, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: portrait.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 162343542589673625, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: speaker.Array.data[2]
+      value: Nayla
+      objectReference: {fileID: 0}
+    - target: {fileID: 162343542589673625, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 162343542589673625, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: portrait.Array.data[2]
+      value: 
+      objectReference: {fileID: 1452783266, guid: cc61aaf7044297a4f98f80a9c000b7a4, type: 3}
+    - target: {fileID: 162343542589673625, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.data[0]
+      value: What is this blue light?
+      objectReference: {fileID: 0}
+    - target: {fileID: 162343542589673625, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.data[1]
+      value: Shhhhh
+      objectReference: {fileID: 0}
+    - target: {fileID: 162343542589673625, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.data[2]
+      value: Mom, I'm scared.
+      objectReference: {fileID: 0}
     - target: {fileID: 2192065473702635393, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
       propertyPath: dialogText
       value: 
@@ -82925,6 +83239,38 @@ PrefabInstance:
       propertyPath: portraitImage
       value: 
       objectReference: {fileID: 144440224}
+    - target: {fileID: 2192065473702635393, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: speaker.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192065473702635393, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: portrait.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192065473702635393, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: speaker.Array.data[2]
+      value: Nayla
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192065473702635393, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192065473702635393, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: portrait.Array.data[2]
+      value: 
+      objectReference: {fileID: 1452783266, guid: cc61aaf7044297a4f98f80a9c000b7a4, type: 3}
+    - target: {fileID: 2192065473702635393, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.data[0]
+      value: "Is it following me?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192065473702635393, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.data[1]
+      value: Shhhh
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192065473702635393, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.data[2]
+      value: "This blue light is everywhere.\r"
+      objectReference: {fileID: 0}
     - target: {fileID: 4308407715529686924, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
       propertyPath: dialogText
       value: 
@@ -82941,6 +83287,38 @@ PrefabInstance:
       propertyPath: portraitImage
       value: 
       objectReference: {fileID: 144440224}
+    - target: {fileID: 4308407715529686924, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: speaker.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308407715529686924, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: portrait.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308407715529686924, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: speaker.Array.data[2]
+      value: Nayla
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308407715529686924, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308407715529686924, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: portrait.Array.data[2]
+      value: 
+      objectReference: {fileID: 1452783266, guid: cc61aaf7044297a4f98f80a9c000b7a4, type: 3}
+    - target: {fileID: 4308407715529686924, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.data[0]
+      value: Are you going to keep following me?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308407715529686924, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.data[1]
+      value: Shhhh
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308407715529686924, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.data[2]
+      value: Please don't hurt me.
+      objectReference: {fileID: 0}
     - target: {fileID: 6737123552057695902, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.91
@@ -83013,6 +83391,44 @@ PrefabInstance:
       propertyPath: portraitImage
       value: 
       objectReference: {fileID: 144440224}
+    - target: {fileID: 8546746546240311841, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: speaker.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546746546240311841, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: portrait.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546746546240311841, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: speaker.Array.data[2]
+      value: Nayla
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546746546240311841, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546746546240311841, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: portrait.Array.data[1]
+      value: 
+      objectReference: {fileID: -2014568315, guid: a7f6685e97e259a4ca790cf8c0505910, type: 3}
+    - target: {fileID: 8546746546240311841, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: portrait.Array.data[2]
+      value: 
+      objectReference: {fileID: 1452783266, guid: cc61aaf7044297a4f98f80a9c000b7a4, type: 3}
+    - target: {fileID: 8546746546240311841, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.data[0]
+      value: It looks like something is moving.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546746546240311841, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.data[1]
+      value: Shhhh
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546746546240311841, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
+      propertyPath: dialogWords.Array.data[2]
+      value: 'Huh?
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 8969583520651334187, guid: 5d606e825fc944d4ba2c9c35291253ec, type: 3}
       propertyPath: m_Name
       value: Blue_Spirit
@@ -83030,6 +83446,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 136388553720734550, guid: c9b7f171f4eb68949b31ec154acf04f9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 136388553720734550, guid: c9b7f171f4eb68949b31ec154acf04f9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 136388553720734550, guid: c9b7f171f4eb68949b31ec154acf04f9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 136388553720734550, guid: c9b7f171f4eb68949b31ec154acf04f9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336898463288962490, guid: c9b7f171f4eb68949b31ec154acf04f9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336898463288962490, guid: c9b7f171f4eb68949b31ec154acf04f9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336898463288962490, guid: c9b7f171f4eb68949b31ec154acf04f9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336898463288962490, guid: c9b7f171f4eb68949b31ec154acf04f9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1940784048260413192, guid: c9b7f171f4eb68949b31ec154acf04f9, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -83118,6 +83566,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1872263261}
+    - target: {fileID: 8531201103960407922, guid: c9b7f171f4eb68949b31ec154acf04f9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531201103960407922, guid: c9b7f171f4eb68949b31ec154acf04f9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531201103960407922, guid: c9b7f171f4eb68949b31ec154acf04f9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531201103960407922, guid: c9b7f171f4eb68949b31ec154acf04f9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8888438188353677269, guid: c9b7f171f4eb68949b31ec154acf04f9, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -83153,3 +83617,4 @@ SceneRoots:
   - {fileID: 1121518875}
   - {fileID: 662466951}
   - {fileID: 1048738910}
+  - {fileID: 1413571883}
