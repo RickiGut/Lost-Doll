@@ -2737,7 +2737,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 10
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0.120000005, z: 0}
   m_MaxChunkCount: 16
@@ -5852,7 +5852,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 10
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0.120000005, z: 0}
   m_MaxChunkCount: 16
@@ -42929,7 +42929,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 10
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0.120000005, z: 0}
   m_MaxChunkCount: 16
@@ -43273,7 +43273,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 10
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0.120000005, z: 0}
   m_MaxChunkCount: 16
@@ -56059,7 +56059,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 10
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0.120000005, z: 0}
   m_MaxChunkCount: 16
@@ -81104,7 +81104,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 10
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0.120000005, z: 0}
   m_MaxChunkCount: 16
@@ -125526,7 +125526,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'A D : Movement
 
-    Esc : Jump
+    Spaces : Jump
 
     Shift : Dash'
   m_isRightToLeft: 0
@@ -126006,7 +126006,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 10
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0.120000005, z: 0}
   m_MaxChunkCount: 16
@@ -129044,8 +129044,8 @@ MonoBehaviour:
   - Apa sing kowe ngomongi? Mungkin sing kowe maksud adikku Darmina?
   - I still don't understand what you mean?! Please help me, I'm confused. What should
     I do here?
-  - Kowe wong ya? Kowe kudu cepetan lunga saka ngene saiki! Mbungaake aku 10 atma
-    lan nyedhaki aku ing sisih kanan jagad iki!
+  - "\"Sampeyan manungsa kudu mulih saiki! Golek ana sepuluh cahya biru lan lungaa
+    menyang pucuking\_donya\_iki.\""
   - I don't understand what you mean, Mom, please help me.
   portrait:
   - {fileID: 1452783266, guid: cc61aaf7044297a4f98f80a9c000b7a4, type: 3}
@@ -130903,7 +130903,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 10
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0.120000005, z: 0}
   m_MaxChunkCount: 16

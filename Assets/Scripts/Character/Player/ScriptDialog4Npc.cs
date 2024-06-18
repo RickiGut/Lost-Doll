@@ -47,9 +47,9 @@ public class ScriptDialog4Npc : MonoBehaviour
         
         data = new String[]{
             "How can you be here, Grandma? Weren't you there before?!",
-            "Oh bocah, pancen wis mbawa atma sing aku pitakonke?",
+            "Nduk, wis gawa sepuluh cahya biru sing tak omongne maeng",
             "I don't know what you mean, but I've collected 10 blue lights here. What should I do with these?",
-            "Menehi aku, atma iki mangan sianganku, matur nuwun. Terus menehi mripat.",
+            "Menehi aku, cahya biru iki mangan sianganku, matur nuwun. Terus menehi mripat.",
             "Huh? You want to eat these lights? Grandma, you're so strange",
             ""};
 

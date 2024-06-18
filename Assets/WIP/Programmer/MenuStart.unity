@@ -2944,7 +2944,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'A D : Movement
 
-    Esc : Jump
+    Spaces  : Jump
 
     Shift : Dash'
   m_isRightToLeft: 0
