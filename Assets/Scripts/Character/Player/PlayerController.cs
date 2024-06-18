@@ -65,8 +65,6 @@ public class PlayerController : MonoBehaviour
     private Collider2D colliderPlayer;
     private bool isHiding = false;
 
-    //Pembuka
-    public GameObject BgAwal;
 
 
     // Start is called before the first frame update
@@ -112,7 +110,6 @@ public class PlayerController : MonoBehaviour
         //
         PlayerPrefs.GetInt("NPCSpirit_Met");
 
-        BgAwal.SetActive(true);
 
     }   
 
