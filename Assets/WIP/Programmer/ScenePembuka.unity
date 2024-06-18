@@ -963,9 +963,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'In the midst of her play, Nayla''s mother calls her to pack up because
-    Nayla''s father has an important job in Jakarta. The girl quickly runs upstairs
-    to the second floor of the villa. Nayla promptly packs her clothes and a few
-    items she brought along.
+    Nayla''s father has an important job in Jakarta. Nayla promptly packs her clothes
+    and a few items she brought along.
 
 '
   m_isRightToLeft: 0
@@ -1101,10 +1100,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: After a 10-minute journey from the villa, Nayla suddenly remembers that
+  m_text: 'After a 10-minute journey from the villa, Nayla suddenly remembers that
     she left her favorite teddy bear doll in the backyard of the villa. Seeing his
-    daughter upset, Nayla's father can't bear it and turns the car around to return
+    daughter upset, Nayla''s father can''t bear it and turns the car around to return
     to the villa.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
   m_sharedMaterial: {fileID: 5334336793343384645, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
@@ -1314,14 +1315,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'A cheerful and active little girl named Nayla is on vacation in Indonesia
-    with her parents. Nayla and her parents are from Brisbane, Australia. They came
-    to Indonesia to take a break, especially because Nayla''s parents are always
-    busy with work. Nayla and her parents are staying at a spacious villa near the
-    mountains.
-
-
-'
+  m_text: 'Nayla, a cheerful girl from Australia, is on vacation in Indonesia with
+    her parents. They came to Indonesia to take a break, especially because Nayla''s
+    parents are always busy with work. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
   m_sharedMaterial: {fileID: 5334336793343384645, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
@@ -1533,9 +1529,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Lost in her search, Nayla didn't realize that she was already deep into
     the forest. Nayla tried running along what she thought was the right path. However,
-    after running for several minutes, Nayla couldn't find her way out. Unconsciously,
-    the atmosphere shifted. The sky darkened, and a chilling, eerie coldness settled
-    in. Nayla felt an overwhelming sense of fear washing\_over\_her."
+    after running for several minutes, Nayla couldn't find\_her\_way\_out."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
   m_sharedMaterial: {fileID: 5334336793343384645, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
@@ -2353,9 +2347,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Since she was little, Nayla hasn't had any friends. Her peers consider
-    Nayla to be very naughty and somewhat strange. Sometimes, other parents even
-    forbid their children from playing with Nayla right in front of her.
+  m_text: 'Since she was little, Nayla has had no friends. Her peers find her naughty
+    and strange. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
   m_sharedMaterial: {fileID: 5334336793343384645, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
@@ -2941,9 +2934,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Arriving at the backyard of the villa, Nayla couldn't find her teddy bear
-    anywhere. Nayla felt very confused. Because Nayla didn't want to leave her beloved
-    teddy bear behind, she decided to run around the extensive backyard of the villa.
+  m_text: 'Not long after, their car arrived back at the villa. Nayla immediately
+    ran towards the backyard of the villa. Nayla couldn''t find her teddy bear. Confused,
+    she searched the entire area.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
   m_sharedMaterial: {fileID: 5334336793343384645, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}

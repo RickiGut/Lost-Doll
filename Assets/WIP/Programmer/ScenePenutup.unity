@@ -857,9 +857,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nayla is playing in the backyard of the villa, accompanied by her favorite
-    teddy bear doll. Meanwhile, Nayla's parents are busy working even though they
-    are on vacation.
+  m_text: "While she was sleeping, Nayla's teddy bear emitted a blue light. Could
+    the previous events\_have\_been\_real?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
   m_sharedMaterial: {fileID: 5334336793343384645, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
@@ -1442,12 +1441,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'A cheerful and active little girl named Nayla is on vacation in Indonesia
-    with her parents. Nayla and her parents are from Brisbane, Australia. They came
-    to Indonesia to take a break, especially because Nayla''s parents are always
-    busy with work. Nayla and her parents are staying at a spacious villa near the
-    mountains.
-
+  m_text: 'Nayla has returned to the backyard, she fell asleep in the backyard with
+    her beloved teddy bear. The events in the spirit world earlier felt very much
+    like a dream.
 
 '
   m_isRightToLeft: 0
