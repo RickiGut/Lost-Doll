@@ -7,6 +7,8 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject canvasSetting;
     private AudioManager audioManager;
+    public GameObject creditTutorial;
+    public GameObject panelTutorial;
 
     void Start(){
          audioManager = FindObjectOfType<AudioManager>();
@@ -41,5 +43,20 @@ public class PauseMenu : MonoBehaviour
        canvasSetting.gameObject.SetActive(false);
     }
 
+        public void OpenTutorial(){
+        creditTutorial.SetActive(true);
+    }
+
+    public void CloseTutorial(){
+        creditTutorial.SetActive(false);
+    }
+
+    public void OpenTutorial2(){
+        panelTutorial.SetActive(true);
+    }
+
+    public void CloseTutorial2(){
+        panelTutorial.SetActive(false);
+    }
 
 }

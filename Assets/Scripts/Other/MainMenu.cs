@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour
     public GameObject PanelEmptyLoad;
     public GameObject settingPannel;
     private AudioManager audioManager;
+    public GameObject panelTutorial;
+    public GameObject creditTutorial;
 
     void Start(){
         audioManager = FindObjectOfType<AudioManager>();
@@ -24,6 +26,8 @@ public class MainMenu : MonoBehaviour
         }
         PanelEmptyLoad.SetActive(false);
         settingPannel.SetActive(false);
+
+        panelTutorial.SetActive(false);
 
     }
 
@@ -72,5 +76,22 @@ public class MainMenu : MonoBehaviour
         audioManager.PlaySFX(audioManager.MenuButton);
         settingPannel.gameObject.SetActive(false);
     }
+
+    public void OpenTutorial(){
+        panelTutorial.SetActive(true);
+    }
+
+    public void CloseTutorial(){
+        panelTutorial.SetActive(false);
+    }
+
+     public void OpenTutorial2(){
+        creditTutorial.SetActive(true);
+    }
+
+    public void CloseTutorial2(){
+        creditTutorial.SetActive(false);
+    }
+
 
 }
