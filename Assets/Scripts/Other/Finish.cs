@@ -13,7 +13,7 @@ public class Finish : MonoBehaviour
             if(currentSceneIndex < totalScenes-1){
                 SceneManager.LoadScene(currentSceneIndex+1);
                 Debug.Log("Masuk ke Scene " + currentSceneIndex+1);
-                PlayerPrefs.DeleteKey("intScore");
+                // PlayerPrefs.DeleteKey("intScore");
             } else{
                 Debug.Log("Sudah mencapai scene akhir");
             }
