@@ -26,4 +26,10 @@ public class HealthManager : MonoBehaviour
         }
         
     }
+
+    public void ResetHealth(){
+        health  = 3;
+        PlayerPrefs.SetInt("playeHealth",health);
+        Debug.Log("Health telah tereset");
+    }
 }

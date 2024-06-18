@@ -78,18 +78,22 @@ public class MainMenu : MonoBehaviour
     }
 
     public void OpenTutorial(){
+        audioManager.PlaySFX(audioManager.MenuButton);
         panelTutorial.SetActive(true);
     }
 
     public void CloseTutorial(){
+        audioManager.PlaySFX(audioManager.MenuButton);
         panelTutorial.SetActive(false);
     }
 
      public void OpenTutorial2(){
+        audioManager.PlaySFX(audioManager.MenuButton);
         creditTutorial.SetActive(true);
     }
 
     public void CloseTutorial2(){
+        audioManager.PlaySFX(audioManager.MenuButton);
         creditTutorial.SetActive(false);
     }
 

@@ -274,6 +274,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void ResetScore(){
+        score = 0;
+        scoreText.text = score.ToString();
+        PlayerPrefs.SetInt("intScore",score);
+        Debug.Log("score telah di reset ke 0");
+    }
+
     void CollectPlayerPrefs(){
             //PlayerPrefs posisi Player
             PlayerPrefs.SetFloat("PlayerPosX",transform.position.x);

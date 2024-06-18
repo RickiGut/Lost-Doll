@@ -129568,7 +129568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1833852054}
   SFXSource: {fileID: 625231585}
-  background: {fileID: 8300000, guid: dbfc587c10ae3b245a18c1c999327a15, type: 3}
+  background: {fileID: 8300000, guid: 86209c07514d0fe42b40684711ea26d1, type: 3}
   MenuButton: {fileID: 8300000, guid: 7c71ba728f0111f46a05ebfb2214d8b2, type: 3}
   playerRun: {fileID: 0}
   playerJump: {fileID: 8300000, guid: 7d737eb466ed3a34b965971dc158fcaf, type: 3}
