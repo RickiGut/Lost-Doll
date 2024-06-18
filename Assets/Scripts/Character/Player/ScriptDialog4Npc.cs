@@ -49,7 +49,7 @@ public class ScriptDialog4Npc : MonoBehaviour
             "How can you be here, Grandma? Weren't you there before?!",
             "Nduk, wis gawa sepuluh cahya biru sing tak omongne maeng",
             "I don't know what you mean, but I've collected 10 blue lights here. What should I do with these?",
-            "Menehi aku, cahya biru iki mangan sianganku, matur nuwun. Terus menehi mripat.",
+            "Endi wenehno aku nduk, iki pangananku. Suwun ya cah ayu. Wes gek dang sampeyan lanjutne lakon mu.",
             "Huh? You want to eat these lights? Grandma, you're so strange",
             ""};
 
