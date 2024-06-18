@@ -33418,6 +33418,7 @@ GameObject:
   - component: {fileID: 511890391}
   - component: {fileID: 511890390}
   - component: {fileID: 511890389}
+  - component: {fileID: 511890392}
   m_Layer: 0
   m_Name: Soul11
   m_TagString: Collect
@@ -33550,6 +33551,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &511890392
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511890387}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7d820196805bb2045a4783d44754e4ba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &512339010
 GameObject:
   m_ObjectHideFlags: 0
@@ -41534,7 +41556,7 @@ Transform:
   m_GameObject: {fileID: 666167238}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -95.34, y: 6, z: 0}
+  m_LocalPosition: {x: -95.07, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55445,6 +55467,7 @@ GameObject:
   - component: {fileID: 819191962}
   - component: {fileID: 819191961}
   - component: {fileID: 819191960}
+  - component: {fileID: 819191963}
   m_Layer: 0
   m_Name: Soul2
   m_TagString: Collect
@@ -55461,7 +55484,7 @@ Transform:
   m_GameObject: {fileID: 819191958}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.83, y: -1.28, z: 0}
+  m_LocalPosition: {x: 30.33, y: -1.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55577,6 +55600,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &819191963
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819191958}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b79d9feb29dca1c4c972d192f1ed7917, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &822418937
 GameObject:
   m_ObjectHideFlags: 0
@@ -55589,6 +55633,7 @@ GameObject:
   - component: {fileID: 822418941}
   - component: {fileID: 822418940}
   - component: {fileID: 822418939}
+  - component: {fileID: 822418942}
   m_Layer: 0
   m_Name: Soul4
   m_TagString: Collect
@@ -55721,6 +55766,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &822418942
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822418937}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd5f9e53a53eff14c8ec35afd5a6a067, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &824321628
 GameObject:
   m_ObjectHideFlags: 0
@@ -79346,6 +79412,7 @@ GameObject:
   - component: {fileID: 1048972335}
   - component: {fileID: 1048972334}
   - component: {fileID: 1048972333}
+  - component: {fileID: 1048972336}
   m_Layer: 0
   m_Name: Soul11 (1)
   m_TagString: Collect
@@ -79362,7 +79429,7 @@ Transform:
   m_GameObject: {fileID: 1048972331}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 122.9, y: 3.93, z: 0}
+  m_LocalPosition: {x: 122.9, y: 3.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79478,6 +79545,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1048972336
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048972331}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 865f9ff1dacc0894499d74faa2aeb18f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1049506957
 GameObject:
   m_ObjectHideFlags: 0
@@ -91299,11 +91387,11 @@ MonoBehaviour:
   portraitImage: {fileID: 1891956054}
   speaker:
   - Nayla
-  - Darminha Grandma
+  - Darminhu Grandma
   - Nayla
-  - Darminha Grandma
+  - Darminhu Grandma
   - Nayla
-  - Darminha Grandma
+  - Darminhu Grandma
   dialogWords:
   - 
   - 
@@ -122328,7 +122416,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Cah ayu, awakmu kudu kondur ing donya manungsa. Nanging, awakmu kudu nggoleki
+    sepuluh jiwa dhisik.Yen wes ketemu, cah ayu bisa kondur menyang donya ne para
+    manungsa. Ati - ati ya cah ayu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
   m_sharedMaterial: {fileID: 5334336793343384645, guid: 9dbca6163c37908439557767e4fc2a4b, type: 2}
@@ -122355,8 +122445,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -123063,6 +123153,7 @@ GameObject:
   - component: {fileID: 1913104166}
   - component: {fileID: 1913104165}
   - component: {fileID: 1913104164}
+  - component: {fileID: 1913104167}
   m_Layer: 0
   m_Name: Soul8
   m_TagString: Collect
@@ -123079,7 +123170,7 @@ Transform:
   m_GameObject: {fileID: 1913104162}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 97.95, y: 6.99, z: 0}
+  m_LocalPosition: {x: 97.95, y: 6.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -123195,6 +123286,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1913104167
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913104162}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9392ef4e0020ab344a3d4be604141717, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1925182176
 GameObject:
   m_ObjectHideFlags: 0
@@ -123341,6 +123453,7 @@ GameObject:
   - component: {fileID: 1925725860}
   - component: {fileID: 1925725859}
   - component: {fileID: 1925725858}
+  - component: {fileID: 1925725861}
   m_Layer: 0
   m_Name: Soul6
   m_TagString: Collect
@@ -123357,7 +123470,7 @@ Transform:
   m_GameObject: {fileID: 1925725856}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 58.54, y: 4.71, z: 0}
+  m_LocalPosition: {x: 58.54, y: 4.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -123473,6 +123586,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1925725861
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925725856}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cbd1fa68eba90954f97a65bcdbcda6e8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1926976323
 GameObject:
   m_ObjectHideFlags: 0
@@ -127644,6 +127778,7 @@ GameObject:
   - component: {fileID: 2048130814}
   - component: {fileID: 2048130813}
   - component: {fileID: 2048130812}
+  - component: {fileID: 2048130815}
   m_Layer: 0
   m_Name: Soul7
   m_TagString: Collect
@@ -127776,6 +127911,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2048130815
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048130810}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 05d2bda62f2a8f84482334cfa460638c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2054251186
 GameObject:
   m_ObjectHideFlags: 0
@@ -128879,9 +129035,9 @@ MonoBehaviour:
   portraitImage: {fileID: 1891956054}
   speaker:
   - Nayla
-  - Nenek
+  - Darminhi Grandma
   - Nayla
-  - Nenek
+  - Darminhi Grandma
   - Nayla
   dialogWords:
   - Wait grandma, why are you here again? Weren't you just over there?!
@@ -128910,6 +129066,7 @@ GameObject:
   - component: {fileID: 2087586772}
   - component: {fileID: 2087586771}
   - component: {fileID: 2087586770}
+  - component: {fileID: 2087586773}
   m_Layer: 0
   m_Name: Soul9
   m_TagString: Collect
@@ -129042,6 +129199,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2087586773
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087586768}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a4124227d595deb45ba9c575aae71631, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2089569192
 GameObject:
   m_ObjectHideFlags: 0
@@ -129874,6 +130052,7 @@ GameObject:
   - component: {fileID: 2121567142}
   - component: {fileID: 2121567141}
   - component: {fileID: 2121567140}
+  - component: {fileID: 2121567143}
   m_Layer: 0
   m_Name: Soul5
   m_TagString: Collect
@@ -129890,7 +130069,7 @@ Transform:
   m_GameObject: {fileID: 2121567138}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 46.64, y: 6.07, z: 0}
+  m_LocalPosition: {x: 46.64, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -130006,6 +130185,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2121567143
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121567138}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f1514ef49298cd4eaf9c4fb4da5aa10, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2121621565
 GameObject:
   m_ObjectHideFlags: 0

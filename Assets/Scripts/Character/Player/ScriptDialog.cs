@@ -113,7 +113,7 @@ public class ScriptDialog : MonoBehaviour
                     }else{
                         canvasTextSoul.SetActive(false);
                         // textCariSoul.gameObject.SetActive(false);
-                        data[5] = $"Bagus cah ayu, saiki yen awakmu metu saka kene, awakmu mung kudu ngetutake jalur iki, mengko awakmu bakal ketemu karo wong.";
+                        data[5] = $"Nggih cah ayu, saiki yen awakmu kepengen metu saka kene, tutno wae dalan iki, mengko awakmu bakal cethuk Mbah Darmini";
                         Debug.Log("Bagus");
                         jalanBuntuCollider.SetActive(false);
                     }
