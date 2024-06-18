@@ -22,7 +22,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 54.41793738097574
+    m_Start: 55.28460404764235
     m_ClipIn: 0
     m_Asset: {fileID: -1037594271361681129}
     m_Duration: 11.033333333333339
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 46.467937380975734
+    m_Start: 47.334604047642344
     m_ClipIn: 0
     m_Asset: {fileID: -5803795810890474723}
     m_Duration: 7.950000000000003
@@ -280,10 +280,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 1
+    m_Start: 2.316666666666667
     m_ClipIn: 0
     m_Asset: {fileID: -7537795624077115857}
-    m_Duration: 7.050000000000001
+    m_Duration: 6.600000000000005
     m_TimeScale: 1
     m_ParentTrack: {fileID: -828730340387670590}
     m_EaseInDuration: 0
@@ -373,7 +373,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 38.61793738097573
+    m_Start: 39.48460404764235
     m_ClipIn: 0
     m_Asset: {fileID: -7430622906704387482}
     m_Duration: 7.850000000000001
@@ -506,7 +506,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 8.05
+    m_Start: 8.916666666666671
     m_ClipIn: 0
     m_Asset: {fileID: 1672026467483874427}
     m_Duration: 7.933333333333332
@@ -599,7 +599,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 22.351270714309067
+    m_Start: 23.21793738097573
     m_ClipIn: 0
     m_Asset: {fileID: -6377766591892599919}
     m_Duration: 7.983333333333331
@@ -692,7 +692,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 15.983333333333333
+    m_Start: 16.849999999999998
     m_ClipIn: 0
     m_Asset: {fileID: -4775499013408081756}
     m_Duration: 6.367937380975734
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 30.334604047642397
+    m_Start: 31.201270714309064
     m_ClipIn: 0
     m_Asset: {fileID: 7272145844260362448}
     m_Duration: 8.283333333333331
