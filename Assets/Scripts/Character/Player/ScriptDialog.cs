@@ -43,6 +43,7 @@ public class ScriptDialog : MonoBehaviour
     public GameObject canvasTextSoul;
     public TextMeshProUGUI textCariSoul;
     bool semuaTerkumpul;
+    CollectSave collectSave;
 
     void Start(){
         
@@ -83,11 +84,12 @@ public class ScriptDialog : MonoBehaviour
                     }
                     step = 0;
                     Time.timeScale = 1;                    
-                    // PlayerPrefs.DeleteKey("intScore");
                     if(!semuaTerkumpul){
                         canvasTextSoul.SetActive(true);
                     }else{
                         canvasTextSoul.SetActive(false);
+                        collectSave.Reset();
+                    
                     }
                     // textCariSoul.gameObject.SetActive(true);
                 }

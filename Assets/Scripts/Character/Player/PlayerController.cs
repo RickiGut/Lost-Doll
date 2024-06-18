@@ -161,7 +161,7 @@ public class PlayerController : MonoBehaviour
     }
 
     public void Jump(InputAction.CallbackContext context){
-        if(isGrounded()){
+        if(isGrounded() && !isDashing){
             if(context.performed){
                 audioManager.PlaySFX(audioManager.playerJump);
                 playerRb.velocity = new Vector2(playerRb.velocity.x,jumpPower);
