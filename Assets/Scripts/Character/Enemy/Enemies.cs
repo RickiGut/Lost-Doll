@@ -55,7 +55,7 @@ void Update()
     else{
         if(distanceToPlayer < chaseRange && (playerController == null || !playerController.IsHiding()))
         {
-            speed = 4;
+            speed = 3f;
             isChasing = true;
             animator.SetBool("kuntiNgejar",true);
         }
