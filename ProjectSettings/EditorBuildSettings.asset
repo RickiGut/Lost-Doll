@@ -23,10 +23,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/WIP/Programmer/ScenePenutup.unity
     guid: 3de41818e75e7e14bbb1f53b4d923c73
-  - enabled: 1
-    path: Assets/WIP/Environment/Level1.unity
-    guid: 4a2c1d2b1c21f824eb43df661e625cd7
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects: {}
