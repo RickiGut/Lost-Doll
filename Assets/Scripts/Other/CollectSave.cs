@@ -9,7 +9,7 @@ public class CollectSave : MonoBehaviour
     void Start()
     {
      int buahStatus = PlayerPrefs.GetInt(collectId, 0);
-     Debug.Log($"Starting {collectId} with status: {buahStatus}");
+     //Debug.Log($"Starting {collectId} with status: {buahStatus}");
      LoadCollect();   
     }
 
@@ -22,7 +22,7 @@ public class CollectSave : MonoBehaviour
     public void Reset(){
         PlayerPrefs.SetInt(collectId,0);
         gameObject.SetActive(true);
-         Debug.Log($"Resetting {collectId}");
+         //Debug.Log($"Resetting {collectId}");
     }
 
     public void LoadCollect(){

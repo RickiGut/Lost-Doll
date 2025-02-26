@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Enemies : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Enemies : MonoBehaviour
  public float speed = 3.5f;
  public float chaseRange = 5f;
  public float stopChase = 5f;
+
+ public GameObject VolumeEffectEnemies;
 
  private Vector3 oriPositionEnemies;
  private Vector3 targetEnemies;
@@ -30,6 +33,7 @@ void Start()
     spriteRenderEnemies = GetComponent<SpriteRenderer>();
     animator = GetComponent<Animator>();
     playerController = player.GetComponent<PlayerController>();
+    VolumeEffectEnemies.SetActive(false);
 }
 
 void Update()
@@ -42,7 +46,9 @@ void Update()
             isChasing = false;
             animator.SetBool("kuntiNgejar",false);
             targetEnemies = GetClosestPatrolPoint();
-        }else if(distanceToPlayer < stopChase)
+            VolumeEffectEnemies.SetActive(false);
+            }
+            else if(distanceToPlayer < stopChase)
      {
         ChasePlayer();
      }else{
@@ -50,14 +56,16 @@ void Update()
         isChasing = false;
         targetEnemies = GetClosestPatrolPoint();
         animator.SetBool("kuntiNgejar",false);
+        VolumeEffectEnemies.SetActive(false );
      }
     }
     else{
         if(distanceToPlayer < chaseRange && (playerController == null || !playerController.IsHiding()))
         {
-            speed = 3f;
+            speed = 2f;
             isChasing = true;
             animator.SetBool("kuntiNgejar",true);
+            VolumeEffectEnemies.SetActive(true);
         }
         else{
             Patrol();
@@ -89,6 +97,7 @@ void ChasePlayer()
     }else{
         spriteRenderEnemies.flipX = true;
     }
+    
 }
 
 void MoveToTarget()

@@ -12,12 +12,21 @@ EditorBuildSettings:
     path: Assets/WIP/Programmer/ScenePembuka.unity
     guid: 3d6ea42a743f9374c9b9ced23dce87f0
   - enabled: 1
+    path: Assets/Scenes/BTesting1.unity
+    guid: 9401ec2bb14c64f409b6e746bc443ed3
+  - enabled: 1
+    path: Assets/Scenes/BTesting2.unity
+    guid: 07e1466f7e8dac547a07c0b99f9dc291
+  - enabled: 1
+    path: Assets/Scenes/BTesting3.unity
+    guid: 1f7f356c88b78444da3a87f01f60d8fa
+  - enabled: 0
     path: Assets/WIP/Programmer/Testing.unity
     guid: 37a9847563055414dbe867563079e934
-  - enabled: 1
+  - enabled: 0
     path: Assets/WIP/Programmer/Testing2.unity
     guid: 044372f2a2d47094cb48cda8b61bc05f
-  - enabled: 1
+  - enabled: 0
     path: Assets/WIP/Programmer/Testing3.unity
     guid: 71efcb5d4d28a9046ac84e5ce024ebe3
   - enabled: 1

@@ -15,6 +15,6 @@ public class buttonNext : MonoBehaviour
     public void ContinueGame()
     {
         audioManager.PlaySFX(audioManager.MenuButton);
-        SceneManager.LoadScene("Testing");
+        SceneManager.LoadScene("BTesting1");
     }
 }

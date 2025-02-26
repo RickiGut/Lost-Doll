@@ -65,6 +65,14 @@ public class PlayerController : MonoBehaviour
     private Collider2D colliderPlayer;
     private bool isHiding = false;
 
+    [SerializeField] GameObject VolumeHiding;
+    [SerializeField] GameObject CanvasHiding;
+    [SerializeField] ParticleSystem WalkPar;
+    [SerializeField] ParticleSystem JumpPar;
+
+    private bool wasGrounded = true; // Untuk menyimpan status sebelumnya
+
+
 
 
     // Start is called before the first frame update
@@ -74,6 +82,9 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         respawnPoint = transform.position;
         oriParent = transform.parent;
+        VolumeHiding.SetActive(false);
+        CanvasHiding.SetActive(false);
+      
 
         //Posisi Player diambil dari playerprefs
         float PosX = PlayerPrefs.GetFloat("PlayerPosX",transform.position.x);
@@ -90,7 +101,7 @@ public class PlayerController : MonoBehaviour
 
         //Collectables
         allCollect = FindObjectsOfType<CollectSave>();
-        Debug.Log("Jumlah Collect " + allCollect);
+        //Debug.Log("Jumlah Collect " + allCollect);
         foreach(CollectSave collectSoul in allCollect){
             if(PlayerManager.isGameOver){
                 collectSoul.Reset();
@@ -116,12 +127,39 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!isDashing){
+        //line 129 - 137 yg lama
+        if (!isDashing)
+        {
             PlayerVelocity();
         }
+
         Animations();
         Detection();
-        Hide();        
+        Hide();
+
+        // **Pastikan Particle System berhenti saat di udara & aktif kembali saat menyentuh tanah**
+        if (!isGrounded()) // Jika karakter di udara
+        {
+            if (WalkPar.isPlaying)
+            {
+                WalkPar.Stop(); // Hentikan particle saat melompat atau jatuh
+            }
+            wasGrounded = false; // Tandai bahwa karakter sebelumnya di udara
+        }
+        else // Jika karakter kembali menyentuh tanah
+        {
+            if (!wasGrounded) // Pastikan ini adalah transisi dari udara ke tanah
+            {
+                if (Mathf.Abs(horizMov) > 0.1f) // Hanya play jika karakter bergerak
+                {
+                    if (!WalkPar.isPlaying)
+                    {
+                        WalkPar.Play(); // Aktifkan particle kembali jika karakter berjalan
+                    }
+                }
+                wasGrounded = true; // Tandai bahwa karakter sudah di tanah
+            }
+        }
     }
 
     void Hide(){
@@ -131,11 +169,16 @@ public class PlayerController : MonoBehaviour
             colliderPlayer.enabled = false;
             isHiding = true;
             IsHiding();
-        }else if(!Input.GetKey(KeyCode.S)){
+            VolumeHiding.SetActive(true);
+            CanvasHiding.SetActive(true);
+        }
+        else if(!Input.GetKey(KeyCode.S)){
             playerRb.simulated = true;
             spriteRenderer.enabled = true;
             colliderPlayer.enabled = true;
             isHiding = false;
+            VolumeHiding.SetActive(false);
+            CanvasHiding.SetActive(false);
         }
     }
 
@@ -148,25 +191,92 @@ public class PlayerController : MonoBehaviour
         playerRb.velocity = new Vector2(horizMov * moveSpeed,playerRb.velocity.y);
 
     }
-    public void Move(InputAction.CallbackContext context){
+    public void Move(InputAction.CallbackContext context)
+    /*{
         if(Time.timeScale != 0){
             audioManager.PlaySFX(audioManager.playerRun);
             horizMov = context.ReadValue<Vector2>().x;
-            if(horizMov > 0){
+            //WalkPar.Play();
+            if (horizMov > 0){
                 spriteRenderer.flipX = false;
-            }else if(horizMov < 0){
+            }
+            else if(horizMov < 0){
+                spriteRenderer.flipX = true;
+            }
+        }
+    }*/
+    {
+        if (Time.timeScale != 0)
+        {
+            audioManager.PlaySFX(audioManager.playerRun);
+            horizMov = context.ReadValue<Vector2>().x;
+
+            // Jika karakter berjalan, aktifkan particle
+            if (horizMov != 0)
+            {
+                if (!WalkPar.isPlaying)
+                {
+                    WalkPar.Play();
+                }
+
+                // **Atur posisi Particle System sesuai arah gerakan**
+                Vector3 particleOffsetKanan = new Vector3(-0.3f, -0.4f, 0); // Jarak partikel dari karakter
+                Vector3 particleOffsetKiri = new Vector3(0.1f, -0.4f, 0); // Jarak partikel dari karakter
+                if (horizMov < 0) // Jika berjalan ke kiri
+                {
+                    WalkPar.transform.localPosition = particleOffsetKiri;
+                }
+                else // Jika berjalan ke kanan
+                {
+                    WalkPar.transform.localPosition = particleOffsetKanan;
+                }
+            }
+            else
+            {
+                if (WalkPar.isPlaying)
+                {
+                    WalkPar.Stop();
+                }
+            }
+
+            // Mengatur arah karakter berdasarkan input
+            if (horizMov > 0)
+            {
+                spriteRenderer.flipX = false;
+            }
+            else if (horizMov < 0)
+            {
                 spriteRenderer.flipX = true;
             }
         }
     }
 
-    public void Jump(InputAction.CallbackContext context){
+    public void Jump(InputAction.CallbackContext context)
+    /*{
         if(isGrounded() && !isDashing){
             if(context.performed){
                 audioManager.PlaySFX(audioManager.playerJump);
+                WalkPar.Stop();
                 playerRb.velocity = new Vector2(playerRb.velocity.x,jumpPower);
             }else if(context.canceled){
                 playerRb.velocity = new Vector2(playerRb.velocity.x,playerRb.velocity.y * 0.5f);
+            }
+        }
+    }*/
+    {
+        if (isGrounded() && !isDashing)
+        {
+            if (context.performed)
+            {
+                audioManager.PlaySFX(audioManager.playerJump);
+                JumpPar.Play();
+                WalkPar.Stop(); // Hentikan particle saat melompat
+                playerRb.velocity = new Vector2(playerRb.velocity.x, jumpPower);
+            }
+            else if (context.canceled)
+            {
+                playerRb.velocity = new Vector2(playerRb.velocity.x, playerRb.velocity.y * 0.5f);
+                JumpPar.Stop();
             }
         }
     }
@@ -278,7 +388,7 @@ public class PlayerController : MonoBehaviour
         score = 0;
         scoreText.text = score.ToString();
         PlayerPrefs.SetInt("intScore",score);
-        Debug.Log("score telah di reset ke 0");
+        //Debug.Log("score telah di reset ke 0");
     }
 
     void CollectPlayerPrefs(){
@@ -286,7 +396,7 @@ public class PlayerController : MonoBehaviour
             PlayerPrefs.SetFloat("PlayerPosX",transform.position.x);
             PlayerPrefs.SetFloat("PlayerPosY",transform.position.y);
             PlayerPrefs.SetFloat("PlayerPosZ",transform.position.z);
-            print("Position sudah tersave");
+           // print("Position sudah tersave");
 
             //Playerprefs Health player
             PlayerPrefs.SetInt("playerHealth",HealthManager.health);
@@ -298,7 +408,7 @@ public class PlayerController : MonoBehaviour
             string currentSceneName = SceneManager.GetActiveScene().name;
             PlayerPrefs.SetString("SavedScene",currentSceneName);
             PlayerPrefs.Save();
-            Debug.Log("Chekpoint " + currentSceneName + "Telah disimpan");
+            //Debug.Log("Chekpoint " + currentSceneName + "Telah disimpan");
     }
 
     void DeletePlayerPrefs(){
