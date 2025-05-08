@@ -3072,7 +3072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dcef96bb5ccac9409b26b187c3b75b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WindBox: {fileID: 1433151915}
+  WindBox: {fileID: 1648369229}
 --- !u!61 &216538005
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15088,11 +15088,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8216478275464268431, guid: 4ca6fadd2893cc349a25d00aa72b7992, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 38.129997
+      value: 14.409994
       objectReference: {fileID: 0}
     - target: {fileID: 8216478275464268431, guid: 4ca6fadd2893cc349a25d00aa72b7992, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2632942
+      value: 0.38329434
       objectReference: {fileID: 0}
     - target: {fileID: 8216478275464268431, guid: 4ca6fadd2893cc349a25d00aa72b7992, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26215,11 +26215,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429647103}
   m_CullTransparentMesh: 1
---- !u!1 &1433151915 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4088595909390746955, guid: 6a5bd47ff077d30428896aa65924fe56, type: 3}
-  m_PrefabInstance: {fileID: 3126572211291206102}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1436552245
 GameObject:
   m_ObjectHideFlags: 0
@@ -29948,6 +29943,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5571806100367081545, guid: f82852886c789cc428db1aee8f496dab, type: 3}
   m_PrefabInstance: {fileID: 1644872257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1648369229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4088595909390746955, guid: 6a5bd47ff077d30428896aa65924fe56, type: 3}
+  m_PrefabInstance: {fileID: 3126572211291206102}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1652136093
 GameObject:
@@ -37922,11 +37922,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1168203153431387813, guid: e42eb5c4e31a64c4aa7fbf648559bbb1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -91.28
+      value: -115
       objectReference: {fileID: 0}
     - target: {fileID: 1168203153431387813, guid: e42eb5c4e31a64c4aa7fbf648559bbb1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.74
+      value: -5.62
       objectReference: {fileID: 0}
     - target: {fileID: 2977853379113691002, guid: e42eb5c4e31a64c4aa7fbf648559bbb1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42098,11 +42098,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3727493667334933781, guid: ae29f1d6713b89f42816936aab182f93, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 1
+      propertyPath: ExternalForcesModule.enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4974307917588933361, guid: ae29f1d6713b89f42816936aab182f93, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
+      propertyPath: VelocityModule.x.maxCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974307917588933361, guid: ae29f1d6713b89f42816936aab182f93, type: 3}
+      propertyPath: VelocityModule.x.maxCurve.m_Curve.Array.data[0].value
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -42131,13 +42135,25 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -80087687
       objectReference: {fileID: 0}
+    - target: {fileID: 2656162889525067301, guid: 51a0e9e0b3b0f3a47a09dc78b18551d2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 21bc2235666d7fc41a037cc9022729b0, type: 2}
     - target: {fileID: 2960202845828381186, guid: 51a0e9e0b3b0f3a47a09dc78b18551d2, type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3609958626857303346, guid: 51a0e9e0b3b0f3a47a09dc78b18551d2, type: 3}
+      propertyPath: m_Name
+      value: ShockwaveParticle
+      objectReference: {fileID: 0}
     - target: {fileID: 3776429631292551612, guid: 51a0e9e0b3b0f3a47a09dc78b18551d2, type: 3}
       propertyPath: m_Name
-      value: SparkleFinish
+      value: SparkleParticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083290100507790539, guid: 51a0e9e0b3b0f3a47a09dc78b18551d2, type: 3}
+      propertyPath: m_Name
+      value: StarsParticle
       objectReference: {fileID: 0}
     - target: {fileID: 4088662256582243488, guid: 51a0e9e0b3b0f3a47a09dc78b18551d2, type: 3}
       propertyPath: playOnAwake
@@ -42259,6 +42275,10 @@ PrefabInstance:
     - target: {fileID: 3338379740303181247, guid: 6a5bd47ff077d30428896aa65924fe56, type: 3}
       propertyPath: m_Name
       value: LeavesParticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088595909390746955, guid: 6a5bd47ff077d30428896aa65924fe56, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

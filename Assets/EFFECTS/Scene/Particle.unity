@@ -29581,6 +29581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire
       objectReference: {fileID: 0}
+    - target: {fileID: 1214617641335335614, guid: b0d5795d78744ad4bbe0329d6fa279e7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8838530024880364769, guid: b0d5795d78744ad4bbe0329d6fa279e7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
