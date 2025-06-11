@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Detection
+  - Checkpoint
+  - npc
+  - MovingPlatform
+  - Collect
+  - Bush
   layers:
   - Default
   - TransparentFX
@@ -11,9 +17,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Ground
+  - Player
+  - Enemy
   - 
   - 
   - 
@@ -40,4 +46,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 4257769683
+    locked: 0
+  - name: Property
+    uniqueID: 579048711
+    locked: 0
+  - name: Ground
+    uniqueID: 1558593755
+    locked: 0
+  - name: NPC
+    uniqueID: 3967488779
+    locked: 0
+  - name: Player
+    uniqueID: 3410054735
+    locked: 0
+  - name: Particle
+    uniqueID: 4214879609
+    locked: 0
+  - name: Foregound
+    uniqueID: 3353942417
     locked: 0
